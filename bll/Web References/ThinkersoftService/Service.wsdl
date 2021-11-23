@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ExcuteQueryTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQueryTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteQueryTexResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQuerySqlServer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQuerySqlServerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteQuerySqlServerResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteGer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteGerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteGerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SQLSExcute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SQLSExcuteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SQLSExcuteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQueryEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQueryExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteQueryExResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQueryExTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteQueryExTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteQueryExTexResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteOperationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteOperationTexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="indexPname" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="vals" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExcuteOperationExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteOperationExResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationExTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="indexPname" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="vals" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonPerson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteOperationExTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteOperationExTexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataBaseBLOB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataBaseBLOBResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExecuteDataBaseBLOBTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataBaseBLOBTexResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExcuteProc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteProcResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcuteProcTexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCountTexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountSqlServer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountSqlServerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCountSqlServerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateErrorDOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlSTR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateErrorDOCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateErrorDOCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateErrorDOCTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlSTR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatorName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateErrorDOCTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateErrorDOCTexResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="outIndex" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteProcEXResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEXTex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="outIndex" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEXTexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteProcEXTexResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEXTexlock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="procName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="win" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operatename" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="outIndex" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="logonName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="islock" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteProcEXTexlockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcuteProcEXTexlockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileServerPath" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteThread">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExcuteThreadResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSMSStock">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSMSStockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSMSStockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchSMS">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchSMSResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFilePathHea">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFilePathHeaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFilePathHeaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getVersionInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="getVersionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getVersionInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVersionInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVersionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateVersionInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUpdateFileList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUpdateFileListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUpdateFileListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateFolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateFolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateUpdateFolderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcuteSDPQ">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExcuteSDPQResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClientStaticEx">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClientStaticExResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getData">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDataResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getHashcode">
+        <s:complexType />
+      </s:element>
+      <s:element name="getHashcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getHashcodeResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HeartBit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HeartBitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HeartBitResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UPLOADFILEEX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UPLOADFILEEXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UPLOADFILEEXResult" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Tcp_Models">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TcpSendUser" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReciveUser" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="TcpContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OnlineUserList" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpfilePath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileData" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileSeq" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UPLOADFILE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="seq" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UPLOADFILEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UPLOADFILEResult" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="downFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tmodel" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="downFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="downFileResult" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRINTBINUPLOAD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tmodel" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRINTBINUPLOADResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PRINTBINUPLOADResult" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRINTBINDOWNLOAD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tmodel" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRINTBINDOWNLOADResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PRINTBINDOWNLOADResult" type="tns:Tcp_Models" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisteCheck">
+        <s:complexType />
+      </s:element>
+      <s:element name="RegisteCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisteCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="getClientCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getClientCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientRegisteCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="getClientRegisteCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getClientRegisteCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getpch">
+        <s:complexType />
+      </s:element>
+      <s:element name="getpchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getpchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getye">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getyeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getyeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submsgtoserver">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submsgtoserverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="submsgtoserverResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getpchDirect">
+        <s:complexType />
+      </s:element>
+      <s:element name="getpchDirectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getpchDirectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getyeDirect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getyeDirectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getyeDirectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submsgtoserverDirect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submsgtoserverDirectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="submsgtoserverDirectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExcuteQueryTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQueryTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQuerySqlServerSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteQuerySqlServer" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQuerySqlServerSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteQuerySqlServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteGerSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteGer" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteGerSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteGerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SQLSExcuteSoapIn">
+    <wsdl:part name="parameters" element="tns:SQLSExcute" />
+  </wsdl:message>
+  <wsdl:message name="SQLSExcuteSoapOut">
+    <wsdl:part name="parameters" element="tns:SQLSExcuteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQueryExSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryEx" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQueryExSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQueryExTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryExTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteQueryExTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteQueryExTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteOperation" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationExSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationEx" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationExSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationExTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationExTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteOperationExTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteOperationExTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataBaseBLOBSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataBaseBLOB" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataBaseBLOBSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDataBaseBLOBResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataBaseBLOBTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataBaseBLOBTex" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataBaseBLOBTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDataBaseBLOBTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteProc" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteProcResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteProcTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteProcTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCount" />
+  </wsdl:message>
+  <wsdl:message name="GetCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountTexSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountTex" />
+  </wsdl:message>
+  <wsdl:message name="GetCountTexSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountSqlServerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountSqlServer" />
+  </wsdl:message>
+  <wsdl:message name="GetCountSqlServerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountSqlServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorDOCSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateErrorDOC" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorDOCSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateErrorDOCResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorDOCTexSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateErrorDOCTex" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorDOCTexSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateErrorDOCTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEX" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEXResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXTexSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEXTex" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXTexSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEXTexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXTexlockSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEXTexlock" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteProcEXTexlockSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteProcEXTexlockResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteThreadSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteThread" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteThreadSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteThreadResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSMSStockSoapIn">
+    <wsdl:part name="parameters" element="tns:getSMSStock" />
+  </wsdl:message>
+  <wsdl:message name="getSMSStockSoapOut">
+    <wsdl:part name="parameters" element="tns:getSMSStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchSMS" />
+  </wsdl:message>
+  <wsdl:message name="FetchSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFilePathHeaSoapIn">
+    <wsdl:part name="parameters" element="tns:getFilePathHea" />
+  </wsdl:message>
+  <wsdl:message name="getFilePathHeaSoapOut">
+    <wsdl:part name="parameters" element="tns:getFilePathHeaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getVersionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getVersionInfo" />
+  </wsdl:message>
+  <wsdl:message name="getVersionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getVersionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVersionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVersionInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVersionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVersionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUpdateFileListSoapIn">
+    <wsdl:part name="parameters" element="tns:getUpdateFileList" />
+  </wsdl:message>
+  <wsdl:message name="getUpdateFileListSoapOut">
+    <wsdl:part name="parameters" element="tns:getUpdateFileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateFolderSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateFolder" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateFolderSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="InCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:InCode" />
+  </wsdl:message>
+  <wsdl:message name="InCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:InCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:UnCode" />
+  </wsdl:message>
+  <wsdl:message name="UnCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:UnCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteSDPQSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcuteSDPQ" />
+  </wsdl:message>
+  <wsdl:message name="ExcuteSDPQSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcuteSDPQResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientStaticExSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientStaticEx" />
+  </wsdl:message>
+  <wsdl:message name="ClientStaticExSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientStaticExResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getData" />
+  </wsdl:message>
+  <wsdl:message name="getDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHashcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getHashcode" />
+  </wsdl:message>
+  <wsdl:message name="getHashcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getHashcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="HeartBitSoapIn">
+    <wsdl:part name="parameters" element="tns:HeartBit" />
+  </wsdl:message>
+  <wsdl:message name="HeartBitSoapOut">
+    <wsdl:part name="parameters" element="tns:HeartBitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UPLOADFILEEXSoapIn">
+    <wsdl:part name="parameters" element="tns:UPLOADFILEEX" />
+  </wsdl:message>
+  <wsdl:message name="UPLOADFILEEXSoapOut">
+    <wsdl:part name="parameters" element="tns:UPLOADFILEEXResponse" />
+  </wsdl:message>
+  <wsdl:message name="UPLOADFILESoapIn">
+    <wsdl:part name="parameters" element="tns:UPLOADFILE" />
+  </wsdl:message>
+  <wsdl:message name="UPLOADFILESoapOut">
+    <wsdl:part name="parameters" element="tns:UPLOADFILEResponse" />
+  </wsdl:message>
+  <wsdl:message name="downFileSoapIn">
+    <wsdl:part name="parameters" element="tns:downFile" />
+  </wsdl:message>
+  <wsdl:message name="downFileSoapOut">
+    <wsdl:part name="parameters" element="tns:downFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="PRINTBINUPLOADSoapIn">
+    <wsdl:part name="parameters" element="tns:PRINTBINUPLOAD" />
+  </wsdl:message>
+  <wsdl:message name="PRINTBINUPLOADSoapOut">
+    <wsdl:part name="parameters" element="tns:PRINTBINUPLOADResponse" />
+  </wsdl:message>
+  <wsdl:message name="PRINTBINDOWNLOADSoapIn">
+    <wsdl:part name="parameters" element="tns:PRINTBINDOWNLOAD" />
+  </wsdl:message>
+  <wsdl:message name="PRINTBINDOWNLOADSoapOut">
+    <wsdl:part name="parameters" element="tns:PRINTBINDOWNLOADResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisteCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisteCheck" />
+  </wsdl:message>
+  <wsdl:message name="RegisteCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisteCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClientCountSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientCount" />
+  </wsdl:message>
+  <wsdl:message name="getClientCountSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClientRegisteCountSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientRegisteCount" />
+  </wsdl:message>
+  <wsdl:message name="getClientRegisteCountSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientRegisteCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getpchSoapIn">
+    <wsdl:part name="parameters" element="tns:getpch" />
+  </wsdl:message>
+  <wsdl:message name="getpchSoapOut">
+    <wsdl:part name="parameters" element="tns:getpchResponse" />
+  </wsdl:message>
+  <wsdl:message name="getyeSoapIn">
+    <wsdl:part name="parameters" element="tns:getye" />
+  </wsdl:message>
+  <wsdl:message name="getyeSoapOut">
+    <wsdl:part name="parameters" element="tns:getyeResponse" />
+  </wsdl:message>
+  <wsdl:message name="submsgtoserverSoapIn">
+    <wsdl:part name="parameters" element="tns:submsgtoserver" />
+  </wsdl:message>
+  <wsdl:message name="submsgtoserverSoapOut">
+    <wsdl:part name="parameters" element="tns:submsgtoserverResponse" />
+  </wsdl:message>
+  <wsdl:message name="getpchDirectSoapIn">
+    <wsdl:part name="parameters" element="tns:getpchDirect" />
+  </wsdl:message>
+  <wsdl:message name="getpchDirectSoapOut">
+    <wsdl:part name="parameters" element="tns:getpchDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="getyeDirectSoapIn">
+    <wsdl:part name="parameters" element="tns:getyeDirect" />
+  </wsdl:message>
+  <wsdl:message name="getyeDirectSoapOut">
+    <wsdl:part name="parameters" element="tns:getyeDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="submsgtoserverDirectSoapIn">
+    <wsdl:part name="parameters" element="tns:submsgtoserverDirect" />
+  </wsdl:message>
+  <wsdl:message name="submsgtoserverDirectSoapOut">
+    <wsdl:part name="parameters" element="tns:submsgtoserverDirectResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="ExcuteQueryTex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">压缩传输</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteQueryTexSoapIn" />
+      <wsdl:output message="tns:ExcuteQueryTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQuerySqlServer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">SQLSERVER压缩传输</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteQuerySqlServerSoapIn" />
+      <wsdl:output message="tns:ExcuteQuerySqlServerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteGer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">常规查询</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteGerSoapIn" />
+      <wsdl:output message="tns:ExcuteGerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SQLSExcute">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">复合SQL语句执行</wsdl:documentation>
+      <wsdl:input message="tns:SQLSExcuteSoapIn" />
+      <wsdl:output message="tns:SQLSExcuteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">存储过程查询</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteQueryExSoapIn" />
+      <wsdl:output message="tns:ExcuteQueryExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryExTex">
+      <wsdl:input message="tns:ExcuteQueryExTexSoapIn" />
+      <wsdl:output message="tns:ExcuteQueryExTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperation">
+      <wsdl:input message="tns:ExcuteOperationSoapIn" />
+      <wsdl:output message="tns:ExcuteOperationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationTex">
+      <wsdl:input message="tns:ExcuteOperationTexSoapIn" />
+      <wsdl:output message="tns:ExcuteOperationTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationEx">
+      <wsdl:input message="tns:ExcuteOperationExSoapIn" />
+      <wsdl:output message="tns:ExcuteOperationExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationExTex">
+      <wsdl:input message="tns:ExcuteOperationExTexSoapIn" />
+      <wsdl:output message="tns:ExcuteOperationExTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOB">
+      <wsdl:input message="tns:ExecuteDataBaseBLOBSoapIn" />
+      <wsdl:output message="tns:ExecuteDataBaseBLOBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOBTex">
+      <wsdl:input message="tns:ExecuteDataBaseBLOBTexSoapIn" />
+      <wsdl:output message="tns:ExecuteDataBaseBLOBTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProc">
+      <wsdl:input message="tns:ExcuteProcSoapIn" />
+      <wsdl:output message="tns:ExcuteProcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcTex">
+      <wsdl:input message="tns:ExcuteProcTexSoapIn" />
+      <wsdl:output message="tns:ExcuteProcTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCount">
+      <wsdl:input message="tns:GetCountSoapIn" />
+      <wsdl:output message="tns:GetCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountTex">
+      <wsdl:input message="tns:GetCountTexSoapIn" />
+      <wsdl:output message="tns:GetCountTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountSqlServer">
+      <wsdl:input message="tns:GetCountSqlServerSoapIn" />
+      <wsdl:output message="tns:GetCountSqlServerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOC">
+      <wsdl:input message="tns:CreateErrorDOCSoapIn" />
+      <wsdl:output message="tns:CreateErrorDOCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOCTex">
+      <wsdl:input message="tns:CreateErrorDOCTexSoapIn" />
+      <wsdl:output message="tns:CreateErrorDOCTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEX">
+      <wsdl:input message="tns:ExcuteProcEXSoapIn" />
+      <wsdl:output message="tns:ExcuteProcEXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTex">
+      <wsdl:input message="tns:ExcuteProcEXTexSoapIn" />
+      <wsdl:output message="tns:ExcuteProcEXTexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTexlock">
+      <wsdl:input message="tns:ExcuteProcEXTexlockSoapIn" />
+      <wsdl:output message="tns:ExcuteProcEXTexlockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除文件</wsdl:documentation>
+      <wsdl:input message="tns:DeleteFileSoapIn" />
+      <wsdl:output message="tns:DeleteFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteThread">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">启动短信</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteThreadSoapIn" />
+      <wsdl:output message="tns:ExcuteThreadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSMSStock">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询短信余额</wsdl:documentation>
+      <wsdl:input message="tns:getSMSStockSoapIn" />
+      <wsdl:output message="tns:getSMSStockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">收短信</wsdl:documentation>
+      <wsdl:input message="tns:FetchSMSSoapIn" />
+      <wsdl:output message="tns:FetchSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFilePathHea">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取服务器文件物理路径</wsdl:documentation>
+      <wsdl:input message="tns:getFilePathHeaSoapIn" />
+      <wsdl:output message="tns:getFilePathHeaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getVersionInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取服务器端版本</wsdl:documentation>
+      <wsdl:input message="tns:getVersionInfoSoapIn" />
+      <wsdl:output message="tns:getVersionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVersionInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改服务器版本</wsdl:documentation>
+      <wsdl:input message="tns:UpdateVersionInfoSoapIn" />
+      <wsdl:output message="tns:UpdateVersionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUpdateFileList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取更新补丁文件列表</wsdl:documentation>
+      <wsdl:input message="tns:getUpdateFileListSoapIn" />
+      <wsdl:output message="tns:getUpdateFileListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateFolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">创建更新文件目录</wsdl:documentation>
+      <wsdl:input message="tns:CreateUpdateFolderSoapIn" />
+      <wsdl:output message="tns:CreateUpdateFolderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InCode">
+      <wsdl:input message="tns:InCodeSoapIn" />
+      <wsdl:output message="tns:InCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnCode">
+      <wsdl:input message="tns:UnCodeSoapIn" />
+      <wsdl:output message="tns:UnCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteSDPQ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">启动线程预查询静态数据</wsdl:documentation>
+      <wsdl:input message="tns:ExcuteSDPQSoapIn" />
+      <wsdl:output message="tns:ExcuteSDPQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientStaticEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">强制预查询静态数据</wsdl:documentation>
+      <wsdl:input message="tns:ClientStaticExSoapIn" />
+      <wsdl:output message="tns:ClientStaticExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取预查询静态数据</wsdl:documentation>
+      <wsdl:input message="tns:getDataSoapIn" />
+      <wsdl:output message="tns:getDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getHashcode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取服务器文件HASHCODE</wsdl:documentation>
+      <wsdl:input message="tns:getHashcodeSoapIn" />
+      <wsdl:output message="tns:getHashcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HeartBit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">心跳</wsdl:documentation>
+      <wsdl:input message="tns:HeartBitSoapIn" />
+      <wsdl:output message="tns:HeartBitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILEEX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传文件无文件队列号</wsdl:documentation>
+      <wsdl:input message="tns:UPLOADFILEEXSoapIn" />
+      <wsdl:output message="tns:UPLOADFILEEXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传文件有文件队列号</wsdl:documentation>
+      <wsdl:input message="tns:UPLOADFILESoapIn" />
+      <wsdl:output message="tns:UPLOADFILESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="downFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载文件</wsdl:documentation>
+      <wsdl:input message="tns:downFileSoapIn" />
+      <wsdl:output message="tns:downFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINUPLOAD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传打印设置文件</wsdl:documentation>
+      <wsdl:input message="tns:PRINTBINUPLOADSoapIn" />
+      <wsdl:output message="tns:PRINTBINUPLOADSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINDOWNLOAD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载打印设置文件</wsdl:documentation>
+      <wsdl:input message="tns:PRINTBINDOWNLOADSoapIn" />
+      <wsdl:output message="tns:PRINTBINDOWNLOADSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisteCheck">
+      <wsdl:input message="tns:RegisteCheckSoapIn" />
+      <wsdl:output message="tns:RegisteCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getClientCount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取客户端已安装数</wsdl:documentation>
+      <wsdl:input message="tns:getClientCountSoapIn" />
+      <wsdl:output message="tns:getClientCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getClientRegisteCount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取客户端注册数</wsdl:documentation>
+      <wsdl:input message="tns:getClientRegisteCountSoapIn" />
+      <wsdl:output message="tns:getClientRegisteCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getpch">
+      <wsdl:input message="tns:getpchSoapIn" />
+      <wsdl:output message="tns:getpchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getye">
+      <wsdl:input message="tns:getyeSoapIn" />
+      <wsdl:output message="tns:getyeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserver">
+      <wsdl:input message="tns:submsgtoserverSoapIn" />
+      <wsdl:output message="tns:submsgtoserverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getpchDirect">
+      <wsdl:input message="tns:getpchDirectSoapIn" />
+      <wsdl:output message="tns:getpchDirectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getyeDirect">
+      <wsdl:input message="tns:getyeDirectSoapIn" />
+      <wsdl:output message="tns:getyeDirectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserverDirect">
+      <wsdl:input message="tns:submsgtoserverDirectSoapIn" />
+      <wsdl:output message="tns:submsgtoserverDirectSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExcuteQueryTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteQueryTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQuerySqlServer">
+      <soap:operation soapAction="http://tempuri.org/ExcuteQuerySqlServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteGer">
+      <soap:operation soapAction="http://tempuri.org/ExcuteGer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SQLSExcute">
+      <soap:operation soapAction="http://tempuri.org/SQLSExcute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryEx">
+      <soap:operation soapAction="http://tempuri.org/ExcuteQueryEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryExTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteQueryExTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperation">
+      <soap:operation soapAction="http://tempuri.org/ExcuteOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteOperationTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationEx">
+      <soap:operation soapAction="http://tempuri.org/ExcuteOperationEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationExTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteOperationExTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOB">
+      <soap:operation soapAction="http://tempuri.org/ExecuteDataBaseBLOB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOBTex">
+      <soap:operation soapAction="http://tempuri.org/ExecuteDataBaseBLOBTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProc">
+      <soap:operation soapAction="http://tempuri.org/ExcuteProc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteProcTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCount">
+      <soap:operation soapAction="http://tempuri.org/GetCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountTex">
+      <soap:operation soapAction="http://tempuri.org/GetCountTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountSqlServer">
+      <soap:operation soapAction="http://tempuri.org/GetCountSqlServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOC">
+      <soap:operation soapAction="http://tempuri.org/CreateErrorDOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOCTex">
+      <soap:operation soapAction="http://tempuri.org/CreateErrorDOCTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEX">
+      <soap:operation soapAction="http://tempuri.org/ExcuteProcEX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTex">
+      <soap:operation soapAction="http://tempuri.org/ExcuteProcEXTex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTexlock">
+      <soap:operation soapAction="http://tempuri.org/ExcuteProcEXTexlock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <soap:operation soapAction="http://tempuri.org/DeleteFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteThread">
+      <soap:operation soapAction="http://tempuri.org/ExcuteThread" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSMSStock">
+      <soap:operation soapAction="http://tempuri.org/getSMSStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchSMS">
+      <soap:operation soapAction="http://tempuri.org/FetchSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFilePathHea">
+      <soap:operation soapAction="http://tempuri.org/getFilePathHea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersionInfo">
+      <soap:operation soapAction="http://tempuri.org/getVersionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVersionInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateVersionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUpdateFileList">
+      <soap:operation soapAction="http://tempuri.org/getUpdateFileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateFolder">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InCode">
+      <soap:operation soapAction="http://tempuri.org/InCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnCode">
+      <soap:operation soapAction="http://tempuri.org/UnCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteSDPQ">
+      <soap:operation soapAction="http://tempuri.org/ExcuteSDPQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientStaticEx">
+      <soap:operation soapAction="http://tempuri.org/ClientStaticEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getData">
+      <soap:operation soapAction="http://tempuri.org/getData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHashcode">
+      <soap:operation soapAction="http://tempuri.org/getHashcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HeartBit">
+      <soap:operation soapAction="http://tempuri.org/HeartBit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILEEX">
+      <soap:operation soapAction="http://tempuri.org/UPLOADFILEEX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILE">
+      <soap:operation soapAction="http://tempuri.org/UPLOADFILE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downFile">
+      <soap:operation soapAction="http://tempuri.org/downFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINUPLOAD">
+      <soap:operation soapAction="http://tempuri.org/PRINTBINUPLOAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINDOWNLOAD">
+      <soap:operation soapAction="http://tempuri.org/PRINTBINDOWNLOAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisteCheck">
+      <soap:operation soapAction="http://tempuri.org/RegisteCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientCount">
+      <soap:operation soapAction="http://tempuri.org/getClientCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientRegisteCount">
+      <soap:operation soapAction="http://tempuri.org/getClientRegisteCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpch">
+      <soap:operation soapAction="http://tempuri.org/getpch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getye">
+      <soap:operation soapAction="http://tempuri.org/getye" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserver">
+      <soap:operation soapAction="http://tempuri.org/submsgtoserver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpchDirect">
+      <soap:operation soapAction="http://tempuri.org/getpchDirect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getyeDirect">
+      <soap:operation soapAction="http://tempuri.org/getyeDirect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserverDirect">
+      <soap:operation soapAction="http://tempuri.org/submsgtoserverDirect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExcuteQueryTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteQueryTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQuerySqlServer">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteQuerySqlServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteGer">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteGer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SQLSExcute">
+      <soap12:operation soapAction="http://tempuri.org/SQLSExcute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryEx">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteQueryEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteQueryExTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteQueryExTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperation">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteOperation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteOperationTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationEx">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteOperationEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteOperationExTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteOperationExTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOB">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteDataBaseBLOB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataBaseBLOBTex">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteDataBaseBLOBTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProc">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteProc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteProcTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCount">
+      <soap12:operation soapAction="http://tempuri.org/GetCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountTex">
+      <soap12:operation soapAction="http://tempuri.org/GetCountTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountSqlServer">
+      <soap12:operation soapAction="http://tempuri.org/GetCountSqlServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOC">
+      <soap12:operation soapAction="http://tempuri.org/CreateErrorDOC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateErrorDOCTex">
+      <soap12:operation soapAction="http://tempuri.org/CreateErrorDOCTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEX">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteProcEX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTex">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteProcEXTex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteProcEXTexlock">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteProcEXTexlock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <soap12:operation soapAction="http://tempuri.org/DeleteFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteThread">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteThread" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSMSStock">
+      <soap12:operation soapAction="http://tempuri.org/getSMSStock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchSMS">
+      <soap12:operation soapAction="http://tempuri.org/FetchSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFilePathHea">
+      <soap12:operation soapAction="http://tempuri.org/getFilePathHea" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersionInfo">
+      <soap12:operation soapAction="http://tempuri.org/getVersionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVersionInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateVersionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUpdateFileList">
+      <soap12:operation soapAction="http://tempuri.org/getUpdateFileList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateFolder">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InCode">
+      <soap12:operation soapAction="http://tempuri.org/InCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnCode">
+      <soap12:operation soapAction="http://tempuri.org/UnCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcuteSDPQ">
+      <soap12:operation soapAction="http://tempuri.org/ExcuteSDPQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientStaticEx">
+      <soap12:operation soapAction="http://tempuri.org/ClientStaticEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getData">
+      <soap12:operation soapAction="http://tempuri.org/getData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHashcode">
+      <soap12:operation soapAction="http://tempuri.org/getHashcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HeartBit">
+      <soap12:operation soapAction="http://tempuri.org/HeartBit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILEEX">
+      <soap12:operation soapAction="http://tempuri.org/UPLOADFILEEX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPLOADFILE">
+      <soap12:operation soapAction="http://tempuri.org/UPLOADFILE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downFile">
+      <soap12:operation soapAction="http://tempuri.org/downFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINUPLOAD">
+      <soap12:operation soapAction="http://tempuri.org/PRINTBINUPLOAD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRINTBINDOWNLOAD">
+      <soap12:operation soapAction="http://tempuri.org/PRINTBINDOWNLOAD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisteCheck">
+      <soap12:operation soapAction="http://tempuri.org/RegisteCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientCount">
+      <soap12:operation soapAction="http://tempuri.org/getClientCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientRegisteCount">
+      <soap12:operation soapAction="http://tempuri.org/getClientRegisteCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpch">
+      <soap12:operation soapAction="http://tempuri.org/getpch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getye">
+      <soap12:operation soapAction="http://tempuri.org/getye" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserver">
+      <soap12:operation soapAction="http://tempuri.org/submsgtoserver" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpchDirect">
+      <soap12:operation soapAction="http://tempuri.org/getpchDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getyeDirect">
+      <soap12:operation soapAction="http://tempuri.org/getyeDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submsgtoserverDirect">
+      <soap12:operation soapAction="http://tempuri.org/submsgtoserverDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://218.70.82.26:9458/cnpcService/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://218.70.82.26:9458/cnpcService/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,85 @@
+/**
+ * 评论
+ *
+ */
+.comment_outermost_div{
+	border: 0px solid green;
+	width: 100%;
+	margin: 15px auto;
+}
+.add_comment_subDiv1{
+	border: 0px solid;
+	width: 100%;
+	height: 25px;
+	line-height:26px;
+	background-color: #E8E8E8;
+	padding-left: 5px;
+	margin-bottom: 2px;
+}
+.add_comment_subDiv2{
+	width: 60%;
+	margin: 0px auto;
+}
+.add_comment_div textarea{
+	border: 1px solid #C6C6C6;
+	width: 100%;
+}
+.add_comment_div input{
+	width: 100%;
+	height: 35px;
+	margin-top: 10px;
+}
+.reply_list_div{
+	border: 0px solid;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.reply_list_subDiv1{
+	border: 0px solid;
+	width: 100%;
+	height: 25px;
+	line-height:26px;
+	background-color: #E8E8E8;
+	padding-left: 5px;
+	margin-bottom: 2px;
+}
+.reply_nickName_span{
+	color: #E6684A;
+}
+.reply_btn_span{
+	color: blue;
+}
+.reply_detail_div{
+	border: 0px dashed;
+	width: 100%;
+	margin: 0px auto;
+	padding: 5px;
+}
+.reply_detail_subDiv{
+	border: 0px dashed;
+	width: 100%;
+	margin: 5px auto;
+	padding: 5px;
+	background-color: #E7E7EA;
+}
+.reply_text_span, .reply_date_subSpan{
+	color: #C4C4C4;
+}
+.reply_date_div{
+	width: 100%;
+	border: 0px solid;
+	text-align:right;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.reply_content_div{
+	word-wrap:break-word;
+}
+.divideLine_div{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #D4D4D4;
+	margin:5px auto; 
+}

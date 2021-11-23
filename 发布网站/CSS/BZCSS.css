@@ -1,0 +1,252 @@
+/* CSS Document */
+/*button∞¥≈•…Ë÷√«¯*/
+
+body
+{
+	width: auto;
+	height: auto;
+}
+#BZ_1, #BZ_2, #btnPriceA, #btnPriceB, #BZ_1_1, #BZ_2_1, #btnChange, #btnChange1, .btn1, .btn2, .btn3, .btn4
+{
+	/*background-color: #0066FF;
+	font-size: 20px;
+	color: #FFFFFF;
+	width: 100%;
+	height: 40px;
+	font-weight: bold;
+	border: 0px;
+	cursor: pointer;
+	padding-left: 10px;
+	line-height:40px;*/
+	width:auto;
+	color: #FFFFFF;
+	height:50px;
+     background-image: url( ../img/bule_m.png );
+	background-repeat: repeat-x;
+    border: 0px;
+	cursor: pointer;
+	padding-left: 10px;
+	line-height:40px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family:@Œ¢»Ì—≈∫⁄;
+}
+
+.grey
+{
+	width: auto;
+	color: #313131;
+	height: 45px;
+	background-image: url( ../img/grey_m.png );
+	background-repeat: repeat-x;
+	border: 0px;
+	cursor: pointer;
+	padding-left:10px;
+	line-height: 45px;
+	 font-weight: bold;
+	  font-size: 18px;
+	  font-family:@Œ¢»Ì—≈∫⁄;
+}
+#people1, #people2, #Submit1, #BZYY,#getBrandWCPayRequest
+{
+	background-color: #0099FF;
+	font-size: 20px;
+	color: #FFFFFF;
+	width: 99%;
+	height: 40px;
+	border: 0px;
+	margin-top: 4px;
+	cursor: pointer;
+	font-family: @Œ¢»Ì—≈∫⁄;
+	
+}
+/*Table1 Ù–‘«¯*/
+#tab1, #tab2, #tab4
+{
+	margin-top: 5px;
+	border: 1px solid #999999;
+	width: 99%;
+	margin-left: 5px;
+	text-align: center;
+}
+#tab3
+{
+	border: 1px solid #999999;
+	width: 99%;
+	margin-left: 5px;
+	text-align: center;
+}
+#s1, #s3, #s5, #s7
+{
+	font-size: 20px;
+	color: #0099FF;
+	font-weight: bold;
+}
+#s2, #s4, #s6, #s8
+{
+	font-size: 20px;
+	color: #999999;
+	font-weight: bold;
+}
+#Remarks
+{
+	border: 1px solid #999999;
+	text-align: left;
+	width: 98%;
+	list-style-type: none;
+}
+#Lab1, #Lab2, #Lab3, #Lab4, #Lab5, #Lab6, #Lab7, #Lab8, #Lab9, #Lab10, #Lab11, #Lab12, #Lab13, #Lab14, #Lab15,#lblOrderSN,#lblPrice,#lblBody
+{
+	font-size: 18px;
+	color: #666666;
+}
+#Label2, #Label3, #Label4, #Label5, #Label7, #Label8, #Label9, #Label10
+{
+	font-size: 20px;
+	color: #666666;
+}
+#n1, #n2, #n3, #n4, #n5, #n6, #n7, #n8, #n9, #n10, #n11, #n12, #n13, #n14, #n15, #n16
+{
+	font-size: 18px;
+/*	font-weight: bold;*/
+	height: 40px;
+	padding-left: 5px;
+	text-align: left;
+	border: 1px solid #BEBEBE;
+	border-top: 0px;
+	border-right: 0px;
+	 font-family:@Œ¢»Ì—≈∫⁄;
+}
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9, #t10, #t11, #t12, #t13
+{
+	height: 40px;
+	padding-right: 5px;
+	border: 1px solid #BEBEBE;
+	border-top: 0px;
+	border-left: 0px;
+}
+#Td1, #Td3, #Td5, #Td7, #Td9, #Td11, #Td13, #Td15
+{
+	font-size:18px;
+	/*	font-weight: bold;*/
+	height: 40px;
+	padding-left: 5px;
+	text-align: left;
+	border: 1px solid #BEBEBE;
+	border-top: 0px;
+	border-right: 0px;
+}
+#Td2, #Td4, #Td6, #Td8, #Td10, #Td12, #Td14, #Td16
+{
+	height: 40px;
+	padding-right: 5px;
+	border: 1px solid #BEBEBE;
+	border-top: 0px;
+	border-left: 0px;
+}
+#Text1, #Text2, #Text3, #Text4, #Text5, #Text6, #Text7, #Text8, #Text9, #Text10, #Text11, #Text12, #Text13, #Text14, #Text15, #Text16, #Text17, #Text18, #Text19, #Text20
+{
+	width: 99%;
+	border-bottom: 1px solid #BEBEBE;
+	font-size: 18px;
+		/*	font-weight: bold;*/
+	color: #666666;
+}
+#TS, #Select1, #Select2, #Select3
+{
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #999999;
+	cursor: pointer;
+	background-color: #CCCCCC;
+}
+#Tab1
+{
+	display: none;
+	width: 100%;
+	border: 1px solid #999999;
+}
+#Tab2, #Tab3
+{
+	border-top: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	width: 99%;
+	margin-left: 5px;
+	border: 1px solid #999999;
+}
+#Tab4, #Tab5, #Tab6, #Tab7, #Tab8, #Tab9, #Table1, #Table2, #Table3, #Table4
+{
+	border-top: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	width: 100%;
+	border: 1px solid #BEBEBE;
+}
+
+.img1
+{
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+	float: left;
+	margin-top:5px;
+}
+.td_title
+{
+	border-bottom: 1px solid #999999;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+	line-height:40px;
+}
+.td_input
+{
+	border-bottom: 1px solid #999999;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+	}
+	
+	.bt_css_s
+{
+	width: 84px;
+	height: 40px;
+	background: url( ../img/btn.png ) no-repeat;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.input
+{
+	height: 40px;
+	 width: 100%;
+    font-size: 20px;
+    line-height:40px;
+     color: #666666;
+      border-color: #CCCCCC
+	}
+
+
+.jfbtn
+{
+	width:100%;
+	height: 56px;
+	background-image: url( ../img/selz.png );
+	background-repeat: repeat-x;
+	border-style: none;
+	border-width: medium;
+	cursor: pointer;
+	font-size: 20px;
+	color:White;
+	}
+
+
+

@@ -1,0 +1,187 @@
+/* 以下是公共皮肤库颜色表：在需要的颜色的元素上引用该样式，如果新增了 颜色表，skin文件夹下的也要同步修改 */
+.bg-color{
+	background-color: #3399ff!important;
+}
+.bg-color-active:active {
+	background-color: #00ccff!important;
+}
+.bd-color{
+	border-color: #009ff0!important;
+}
+.bd-base-color{
+	border-color: #009ff0!important;
+}
+.word-color{
+	color: #009ff0!important;
+}
+.radio-pitch-on-color{
+	border: 1px solid #009ff0!important;
+	color: #009ff0!important;
+	background-color: #d9eef9!important;
+}
+
+/*基础*/
+.btn-base {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #fff!important;
+	opacity: .9;
+    background: linear-gradient(#00ccff, #3399ff);/*2018-01*/
+}
+
+.btn-base:active {
+	background: linear-gradient(#3399ff, #00ccff);
+}
+
+.btn-base[disabled] {
+	background: #eee;
+}
+
+.copyright {
+	/* display: none; */
+}
+
+/* list */
+.color-card-list li {
+	background: rgba(255, 255, 255, .8);
+}
+
+.color-card-list li.binded {
+	border-color: #3399ff;
+}
+
+.color-card-list li.binded:after {
+	border-color: #3399ff;
+	color: #3399ff;
+}
+
+.color-card-list li.fail {
+	border-color: rgba(255, 51, 52, .8);
+}
+
+.page-base-list {
+
+}
+
+/* form */
+.color-card-form {
+	border-color: #3399ff;
+	background-color: white;
+}
+
+.color-card-form .form-row {
+	border-color: #00ccff;
+	background: rgba(255, 255, 255, 0);
+}
+
+.color-card-form .input-row input,
+.color-card-form .input-row textarea {
+	background: rgba(255, 255, 255, 0);
+}
+
+#authCodeRow .input-row {
+	border-color: #00ccff!important;
+}
+
+.base-form {
+	background: rgba(255, 255, 255, .8);
+	border-bottom: 1px solid #00ccff;
+}
+
+.base-form .form-row {
+	border-color: #00ccff;
+	background: rgba(255, 255, 255, 0);
+}
+
+.base-form .input-row input {
+	background: rgba(255, 255, 255, 0);
+}
+
+.bill-form .area {
+	border-color: #00ccff;
+	background: rgba(255, 255, 255, 1);
+}
+
+.bill-form .form-row {
+	border-color: #00ccff;
+}
+
+.base-list li {
+	border: 2px solid #00ccff;
+	background: rgba(255, 255, 255, 1);
+}
+
+.page-base-list #loadMore {
+	border: 1px solid #00ccff;
+	background: rgba(255, 255, 255, .6);
+}
+
+/* 页面 */
+.page-base-list,
+#page-zhlb,
+#page-xxbd,
+#page-lxxx,
+#page-sfzd,
+#page-jnsf,
+#page-xzyycb,
+#page-yycb,
+#page-yywd,
+#page-xzhdfk,
+#page-hdfk,
+#page-wgw, 
+.page-my-media-list, 
+.dashboard {
+	background: url(img/footerbg.png) bottom center no-repeat, #daf8f8;
+	background-size: 100%, auto;
+}
+
+.page-base-list .container,
+#page-zhlb .container,
+#page-xxbd .container,
+#page-lxxx .container,
+#page-sfzd .container,
+#page-jnsf .container,
+#page-xzyycb .container,
+#page-yycb .container,
+#page-yywd .container,
+#page-xzhdfk .container,
+#page-hdfk .container {
+	padding-bottom: 165px;
+}
+
+.page-base-list .second-bg,
+#page-zhlb .second-bg,
+#page-xxbd .second-bg,
+#page-lxxx .second-bg,
+#page-sfzd .second-bg,
+#page-jnsf .second-bg,
+#page-xzyycb .second-bg,
+#page-yycb .second-bg,
+#page-yywd .second-bg,
+#page-xzhdfk .second-bg,
+#page-hdfk .second-bg {
+	/* position: absolute;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-image: url(./src/bottom.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain; */
+}
+
+.warm-tips-card {
+	background: rgba(229, 229, 229, .9);
+}
+
+.top-info {
+	background: url(img/bg03.jpg) center;
+}
+
+.bill-status {
+	background: url(img/bg04.jpg) bottom center;
+}
+.temp-container  .temp-button{
+	border: 2px solid #00ccff;
+	color: #00ccff;
+}

@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89EF15D4-8117-4EFC-B60B-B5257189DC7F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBSW</RootNamespace>
+    <AssemblyName>NBSW</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="THKBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="THKDAO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKDAO.dll</HintPath>
+    </Reference>
+    <Reference Include="THKFactory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="THKInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="THKModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKModel.dll</HintPath>
+    </Reference>
+    <Reference Include="THKTCPCom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\THKTCPCom.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bind.html" />
+    <Content Include="BindId.aspx" />
+    <Content Include="Bindlog.aspx" />
+    <Content Include="bind_files\article.css" />
+    <Content Include="bind_files\base.css" />
+    <Content Include="bind_files\bootstrap.min.css" />
+    <Content Include="bind_files\comment.css" />
+    <Content Include="bind_files\font-awesome.min.css" />
+    <Content Include="bind_files\form.css" />
+    <Content Include="bind_files\function.css" />
+    <Content Include="bind_files\jquery.min.js" />
+    <Content Include="bind_files\jquery.mydialog.js" />
+    <Content Include="bind_files\jquery.mytooltip.js" />
+    <Content Include="bind_files\layui.css" />
+    <Content Include="bind_files\layui.js" />
+    <Content Include="bind_files\list.css" />
+    <Content Include="bind_files\main.css" />
+    <Content Include="bind_files\mydialog.css" />
+    <Content Include="bind_files\mytooltip.css" />
+    <Content Include="bind_files\normalize.css" />
+    <Content Include="bind_files\parsley.min.js" />
+    <Content Include="bind_files\sandbeach-oldPage.css" />
+    <Content Include="bind_files\zsy-logo.png" />
+    <Content Include="BusinessDetail.aspx" />
+    <Content Include="ChooseIdCard.aspx" />
+    <Content Include="CompanyShow_\article.css" />
+    <Content Include="CompanyShow_\base.css" />
+    <Content Include="CompanyShow_\bootstrap.min.css" />
+    <Content Include="CompanyShow_\comment.css" />
+    <Content Include="CompanyShow_\font-awesome.min.css" />
+    <Content Include="CompanyShow_\form.css" />
+    <Content Include="CompanyShow_\function.css" />
+    <Content Include="CompanyShow_\icon12.png" />
+    <Content Include="CompanyShow_\icon18.png" />
+    <Content Include="CompanyShow_\icon2.png" />
+    <Content Include="CompanyShow_\icon3.png" />
+    <Content Include="CompanyShow_\icon4.png" />
+    <Content Include="CompanyShow_\icon9.png" />
+    <Content Include="CompanyShow_\jquery.event.drag.js" />
+    <Content Include="CompanyShow_\jquery.min.js" />
+    <Content Include="CompanyShow_\jquery.mytooltip.js" />
+    <Content Include="CompanyShow_\jquery.touchslider.js" />
+    <Content Include="CompanyShow_\layui.css" />
+    <Content Include="CompanyShow_\layui.js" />
+    <Content Include="CompanyShow_\list.css" />
+    <Content Include="CompanyShow_\main.css" />
+    <Content Include="CompanyShow_\mytooltip.css" />
+    <Content Include="CompanyShow_\normalize.css" />
+    <Content Include="CompanyShow_\parsley.min.js" />
+    <Content Include="CompanyShow_\sandbeach-oldPage.css" />
+    <Content Include="CompanyShow_\zsy-logo.png" />
+    <Content Include="CSS\amazeui.min.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\BZCSS.css" />
+    <Content Include="CSS\Home.css" />
+    <Content Include="CSS\news.css" />
+    <Content Include="CSS\templatemo-style.css" />
+    <Content Include="DetailInf.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="ImgSave_\2021-09-03\C_02399e96c96c4597a91b3eb0786f3be6.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_032cd7a806c54e158af11855e1e6f31b.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_0e23f18522bc4c64bd2ab50c41185910.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_28c3e8a051c544fea01ff5b50e7f5229.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_4b23df2984d1408081d60c8708a20f21.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_4e2fe302d5a04ae0aa193c49053e9536.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_9ebd04dda9874736aa5b4de7d8e08739.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_ab838b9d7db94c70b2c83c14209b5be8.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_b5e6e8d5fb73434da3d6734c46623086.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_baee7e150c0047efa84690fc2e32d4f5.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_d3806fea8a5e47c5a0ad01ac99c8b19f.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_e5d894e08e4e40f1afe7eb514ff057f0.jpg" />
+    <Content Include="ImgSave_\2021-09-03\C_ee9c8d48e0bb47dda5346db36f32f665.jpg" />
+    <Content Include="ImgSave_\2021-10-29\C_627c99ce3203493b986b35aedd72e6d5.jpg" />
+    <Content Include="ImgSave_\2021-10-29\C_95220d116d88413a8716f56264e4d33d.jpeg" />
+    <Content Include="ImgSave_\2021-10-29\C_95b9e812ed6946f78fec86750301ed5b.jpeg" />
+    <Content Include="ImgSave_\2021-10-29\C_97e610f69dce465c9b3c8f651b566c9c.jpeg" />
+    <Content Include="ImgSave_\2021-10-29\C_a55115bfa89d4004a37caf68c29617f8.jpg" />
+    <Content Include="ImgSave_\2021-10-29\C_a7503c9447a646dd9c12e3004df8cc09.jpg" />
+    <Content Include="ImgSave_\2021-11-01\C_0aea88b699414af9890ed53d8cb31b23.jpeg" />
+    <Content Include="ImgSave_\2021-11-01\C_333a8f95f5cf4368877d5d74611996e1.jpeg" />
+    <Content Include="ImgSave_\2021-11-01\C_78bb3378ba7b444fa7cacb1c86346d1d.jpeg" />
+    <Content Include="ImgSave_\2021-11-01\C_cfb643b6badb4c7cbd1c7a40ad5ae5d8.jpg" />
+    <Content Include="ImgSave_\2021-11-01\C_e7c2e23248194199b9cc23d522a52c5e.jpeg" />
+    <Content Include="Img\1.jpg" />
+    <Content Include="Img\1.png" />
+    <Content Include="Img\111.jpg" />
+    <Content Include="Img\1111.jpg" />
+    <Content Include="Img\144104.jpg" />
+    <Content Include="Img\145249.jpg" />
+    <Content Include="Img\1_01.png" />
+    <Content Include="Img\1_02.png" />
+    <Content Include="Img\1_05.png" />
+    <Content Include="Img\1_09.png" />
+    <Content Include="Img\1_10.jpg" />
+    <Content Include="Img\1_16.png" />
+    <Content Include="Img\2.jpg" />
+    <Content Include="Img\2.png" />
+    <Content Include="Img\200.png" />
+    <Content Include="Img\222.jpg" />
+    <Content Include="Img\24.png" />
+    <Content Include="Img\25.jpg" />
+    <Content Include="Img\3.jpg" />
+    <Content Include="Img\3.png" />
+    <Content Include="Img\4.jpg" />
+    <Content Include="Img\4.png" />
+    <Content Include="Img\5.jpg" />
+    <Content Include="Img\5.png" />
+    <Content Include="Img\5409.jpg" />
+    <Content Include="Img\6.png" />
+    <Content Include="Img\7.png" />
+    <Content Include="Img\A_right.png" />
+    <Content Include="Img\back.jpg" />
+    <Content Include="Img\bg01.png" />
+    <Content Include="Img\btn_1.png" />
+    <Content Include="Img\btn_2.png" />
+    <Content Include="Img\gr1.jpg" />
+    <Content Include="Img\gr2.jpg" />
+    <Content Include="Img\header.jpg" />
+    <Content Include="Img\ico1.png" />
+    <Content Include="Img\ico2.png" />
+    <Content Include="Img\ico3.png" />
+    <Content Include="Img\j1.jpg" />
+    <Content Include="Img\j2.jpg" />
+    <Content Include="Img\j3.jpg" />
+    <Content Include="Img\j4.jpg" />
+    <Content Include="Img\j5.jpg" />
+    <Content Include="Img\jl.jpg" />
+    <Content Include="Img\JL_YYWD.jpg" />
+    <Content Include="Img\JL_ZZJG.jpg" />
+    <Content Include="Img\js.jpg" />
+    <Content Include="Img\junlian.jpg" />
+    <Content Include="Img\kehu1.png" />
+    <Content Include="Img\kehu2.png" />
+    <Content Include="Img\left.png" />
+    <Content Include="Img\left1.png" />
+    <Content Include="Img\List.jpg" />
+    <Content Include="Img\List1.jpg" />
+    <Content Include="Img\log.jpg" />
+    <Content Include="Img\log.png" />
+    <Content Include="Img\log1.png" />
+    <Content Include="Img\LOGO.png" />
+    <Content Include="Img\Organization.png" />
+    <Content Include="Img\QianFree.png" />
+    <Content Include="Img\QueryFree.jpg" />
+    <Content Include="Img\right.png" />
+    <Content Include="Img\rili1.png" />
+    <Content Include="Img\rili2.png" />
+    <Content Include="Img\SafeShow.jpg" />
+    <Content Include="Img\ShowComany1.jpg" />
+    <Content Include="Img\ShowComany2.jpg" />
+    <Content Include="Img\ShowComany3.jpg" />
+    <Content Include="Img\ShowComany4.jpg" />
+    <Content Include="Img\ShowComany5.jp.jpg" />
+    <Content Include="Img\ShowComany5.jpg" />
+    <Content Include="Img\ShowComany6.jpg" />
+    <Content Include="Img\watersupply.jpg" />
+    <Content Include="Img\weiF_05.png" />
+    <Content Include="Img\xiala1.png" />
+    <Content Include="Img\xiala2.png" />
+    <Content Include="Img\xn.gif" />
+    <Content Include="Img\xn1.gif" />
+    <Content Include="Img\xn2.gif" />
+    <Content Include="Img\xn3.jpg" />
+    <Content Include="Img\xn4.jpg" />
+    <Content Include="Img\xwjj.jpg" />
+    <Content Include="Img\Yf.png" />
+    <Content Include="Img\YiFree.png" />
+    <Content Include="Img\YYWD.jpg" />
+    <Content Include="Img\YYWD2.jpg" />
+    <Content Include="Img\zcjg.png" />
+    <Content Include="Img\zuobiao.png" />
+    <Content Include="Img\zuobiao1.png" />
+    <Content Include="Img\zzjg.png" />
+    <Content Include="Img\二维码_03.png" />
+    <Content Include="Img\安康LOGO.png" />
+    <Content Include="Img\小绿冒.png" />
+    <Content Include="Img\巨能.jpg" />
+    <Content Include="Img\巨能.png" />
+    <Content Include="Img\巨能达县公众号二维码.jpg" />
+    <Content Include="Img\底图.jpg" />
+    <Content Include="Img\查询缴费跳转.jpg" />
+    <Content Include="Img\江安.jpg" />
+    <Content Include="Img\江安.png" />
+    <Content Include="Img\江安国润.png" />
+    <Content Include="Img\用水百科.jpg" />
+    <Content Include="Img\白条.png" />
+    <Content Include="Img\红丝带底图.jpg" />
+    <Content Include="Img\组织机构.png" />
+    <Content Include="Img\组织构架.jpg" />
+    <Content Include="Img\组织架构.png" />
+    <Content Include="Img\缴费支付.jpg" />
+    <Content Include="Img\背景.jpg" />
+    <Content Include="Img\背景.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index2.aspx" />
+    <Content Include="InstallationPay.aspx" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\index.js" />
+    <Content Include="JS\jquery-1.9.1.min.js" />
+    <Content Include="JS\jquery.js" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="JS\jquery.singlePageNav.min.js" />
+    <Content Include="JS\jweixin-1.0.0.js" />
+    <Content Include="JS\lazyloadv3.js" />
+    <Content Include="JS\MyFunction.js" />
+    <Content Include="JS\MyFunction2.js" />
+    <Content Include="log.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="News1.aspx" />
+    <Content Include="NewsUserApplication.aspx" />
+    <Content Include="Notify.aspx" />
+    <Content Include="Notify1.aspx" />
+    <Content Include="OpenDoorList.aspx" />
+    <Content Include="Paypartner.aspx" />
+    <Content Include="ShowCompany.aspx" />
+    <Content Include="ShowDetail1.aspx" />
+    <Content Include="ShowDetail12.aspx" />
+    <Content Include="ShutdownPoint.aspx" />
+    <Content Include="ShutdownPointdemo_files\dial.png" />
+    <Content Include="ShutdownPointdemo_files\information.js" />
+    <Content Include="ShutdownPointdemo_files\jquery-2.1.0.js" />
+    <Content Include="ShutdownPointdemo_files\jweixin-1.0.0.js" />
+    <Content Include="ShutdownPointdemo_files\loading.css" />
+    <Content Include="ShutdownPointdemo_files\main.js" />
+    <Content Include="ShutdownPointdemo_files\map1.jpg" />
+    <Content Include="ShutdownPointdemo_files\util.js" />
+    <Content Include="ShutdownPointdemo_files\yywd.css" />
+    <Content Include="skin\css\basic.css" />
+    <Content Include="skin\css\format.css" />
+    <Content Include="skin\css\style8.css" />
+    <Content Include="skin\images\code.jpg" />
+    <Content Include="skin\images\home_icon.png" />
+    <Content Include="skin\images\icon2b.png" />
+    <Content Include="skin\images\login_qq.png" />
+    <Content Include="skin\images\login_wb.png" />
+    <Content Include="skin\images\plugmenu1.png" />
+    <Content Include="skin\images\plugmenu2.png" />
+    <Content Include="skin\images\plugmenu3.png" />
+    <Content Include="skin\images\plugmenu4.png" />
+    <Content Include="skin\images\plugmenu5.png" />
+    <Content Include="skin\images\plugmenu6.png" />
+    <Content Include="skin\images\plugmenu8.png" />
+    <Content Include="skin\images\u_s1.png" />
+    <Content Include="skin\images\u_s2.png" />
+    <Content Include="skin\js\classie.js" />
+    <Content Include="skin\js\demo7.js" />
+    <Content Include="skin\js\jquery-1.7.2.min.js" />
+    <Content Include="skin\js\modernizr.custom.js" />
+    <Content Include="themes\css\base.css" />
+    <Content Include="themes\css\home.css" />
+    <Content Include="themes\css\icon.css" />
+    <Content Include="themes\css\picker-extend.css" />
+    <Content Include="themes\css\return.png" />
+    <Content Include="themes\css\swiper.min.css" />
+    <Content Include="themes\icon\icon-count.png" />
+    <Content Include="themes\icon\icon-ease.png" />
+    <Content Include="themes\icon\icon-gj.png" />
+    <Content Include="themes\icon\icon-heart.png" />
+    <Content Include="themes\icon\icon-hot.png" />
+    <Content Include="themes\icon\icon-id-no.png" />
+    <Content Include="themes\icon\icon-id-yes.png" />
+    <Content Include="themes\icon\icon-mer.png" />
+    <Content Include="themes\icon\icon-mine-01.png" />
+    <Content Include="themes\icon\icon-mine-02.png" />
+    <Content Include="themes\icon\icon-mine-03.png" />
+    <Content Include="themes\icon\icon-mine-04.png" />
+    <Content Include="themes\icon\icon-mine-05.png" />
+    <Content Include="themes\icon\icon-mine-06.png" />
+    <Content Include="themes\icon\icon-mine-07.png" />
+    <Content Include="themes\icon\icon-mine-08.png" />
+    <Content Include="themes\icon\icon-mine-09.png" />
+    <Content Include="themes\icon\icon-mine-10.png" />
+    <Content Include="themes\icon\icon-mine.png" />
+    <Content Include="themes\icon\icon-mine2.png" />
+    <Content Include="themes\icon\icon-month.png" />
+    <Content Include="themes\icon\icon-no.png" />
+    <Content Include="themes\icon\icon-pen.png" />
+    <Content Include="themes\icon\icon-process.png" />
+    <Content Include="themes\icon\icon-query.png" />
+    <Content Include="themes\icon\icon-season.png" />
+    <Content Include="themes\icon\icon-security.png" />
+    <Content Include="themes\icon\icon-shield.png" />
+    <Content Include="themes\icon\icon-si.png" />
+    <Content Include="themes\icon\icon-social.png" />
+    <Content Include="themes\icon\icon-staff.png" />
+    <Content Include="themes\icon\icon-sum.png" />
+    <Content Include="themes\icon\icon-upload.png" />
+    <Content Include="themes\icon\icon-wx.png" />
+    <Content Include="themes\icon\icon-year.png" />
+    <Content Include="themes\icon\icon-zf.png" />
+    <Content Include="themes\icon\ok.png" />
+    <Content Include="themes\img\banner\banner.png" />
+    <Content Include="themes\img\count-ad.png" />
+    <Content Include="themes\img\mer-ad.png" />
+    <Content Include="themes\img\pay-ad.png" />
+    <Content Include="themes\img\top-ad.png" />
+    <Content Include="themes\img\user-001.png" />
+    <Content Include="themes\img\user-002.png" />
+    <Content Include="themes\img\user-003.png" />
+    <Content Include="themes\js\foldpanel.min.js" />
+    <Content Include="themes\js\iscroll.js" />
+    <Content Include="themes\js\jquery.min.js" />
+    <Content Include="themes\js\picker-extend.js" />
+    <Content Include="themes\js\pullToRefresh.js" />
+    <Content Include="themes\js\swiper.min.js" />
+    <Content Include="UseGasKnow.aspx" />
+    <Content Include="Waterprice.aspx" />
+    <Content Include="WaterSupply.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebPriceStandard.aspx" />
+    <Content Include="WeiPay.aspx" />
+    <Content Include="WeiPay1.aspx" />
+    <Content Include="WFApply.aspx" />
+    <Content Include="yongqianquan.aspx" />
+    <Content Include="zzjg.aspx" />
+    <Content Include="投诉_files\cf_tsjy01.png" />
+    <Content Include="投诉_files\cf_zhsw.css" />
+    <Content Include="投诉_files\css.css" />
+    <Content Include="投诉_files\jquery-3.3.1.min.js" />
+    <Content Include="投诉_files\layer.css" />
+    <Content Include="投诉_files\layer.js" />
+    <Content Include="投诉_files\webuploader.css" />
+    <Content Include="投诉_files\webuploader.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindId.aspx.cs">
+      <DependentUpon>BindId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BindId.aspx.designer.cs">
+      <DependentUpon>BindId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bindlog.aspx.cs">
+      <DependentUpon>Bindlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bindlog.aspx.designer.cs">
+      <DependentUpon>Bindlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDetail.aspx.cs">
+      <DependentUpon>BusinessDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessDetail.aspx.designer.cs">
+      <DependentUpon>BusinessDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseIdCard.aspx.cs">
+      <DependentUpon>ChooseIdCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseIdCard.aspx.designer.cs">
+      <DependentUpon>ChooseIdCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailInf.aspx.cs">
+      <DependentUpon>DetailInf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailInf.aspx.designer.cs">
+      <DependentUpon>DetailInf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index2.aspx.cs">
+      <DependentUpon>Index2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index2.aspx.designer.cs">
+      <DependentUpon>Index2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstallationPay.aspx.cs">
+      <DependentUpon>InstallationPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstallationPay.aspx.designer.cs">
+      <DependentUpon>InstallationPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News1.aspx.cs">
+      <DependentUpon>News1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News1.aspx.designer.cs">
+      <DependentUpon>News1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsUserApplication.aspx.cs">
+      <DependentUpon>NewsUserApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsUserApplication.aspx.designer.cs">
+      <DependentUpon>NewsUserApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notify.aspx.cs">
+      <DependentUpon>Notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notify.aspx.designer.cs">
+      <DependentUpon>Notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notify1.aspx.cs">
+      <DependentUpon>Notify1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notify1.aspx.designer.cs">
+      <DependentUpon>Notify1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenDoorList.aspx.cs">
+      <DependentUpon>OpenDoorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenDoorList.aspx.designer.cs">
+      <DependentUpon>OpenDoorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paypartner.aspx.cs">
+      <DependentUpon>Paypartner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paypartner.aspx.designer.cs">
+      <DependentUpon>Paypartner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowCompany.aspx.cs">
+      <DependentUpon>ShowCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowCompany.aspx.designer.cs">
+      <DependentUpon>ShowCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowDetail1.aspx.cs">
+      <DependentUpon>ShowDetail1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowDetail1.aspx.designer.cs">
+      <DependentUpon>ShowDetail1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowDetail12.aspx.cs">
+      <DependentUpon>ShowDetail12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowDetail12.aspx.designer.cs">
+      <DependentUpon>ShowDetail12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShutdownPoint.aspx.cs">
+      <DependentUpon>ShutdownPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShutdownPoint.aspx.designer.cs">
+      <DependentUpon>ShutdownPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseGasKnow.aspx.cs">
+      <DependentUpon>UseGasKnow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseGasKnow.aspx.designer.cs">
+      <DependentUpon>UseGasKnow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Waterprice.aspx.cs">
+      <DependentUpon>Waterprice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Waterprice.aspx.designer.cs">
+      <DependentUpon>Waterprice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WaterSupply.aspx.cs">
+      <DependentUpon>WaterSupply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WaterSupply.aspx.designer.cs">
+      <DependentUpon>WaterSupply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPriceStandard.aspx.cs">
+      <DependentUpon>WebPriceStandard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPriceStandard.aspx.designer.cs">
+      <DependentUpon>WebPriceStandard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiPay.aspx.cs">
+      <DependentUpon>WeiPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiPay.aspx.designer.cs">
+      <DependentUpon>WeiPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiPay1.aspx.cs">
+      <DependentUpon>WeiPay1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiPay1.aspx.designer.cs">
+      <DependentUpon>WeiPay1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFApply.aspx.cs">
+      <DependentUpon>WFApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFApply.aspx.designer.cs">
+      <DependentUpon>WFApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yongqianquan.aspx.cs">
+      <DependentUpon>yongqianquan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yongqianquan.aspx.designer.cs">
+      <DependentUpon>yongqianquan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zzjg.aspx.cs">
+      <DependentUpon>zzjg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zzjg.aspx.designer.cs">
+      <DependentUpon>zzjg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bll\bll.csproj">
+      <Project>{35185862-6C55-470D-9F95-A69BE46F20F3}</Project>
+      <Name>bll</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ImgSave_\2021-10-28\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Img\form-master.zip" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="ShutdownPointdemo_files\js" />
+    <None Include="themes\.DS_Store" />
+    <None Include="themes\img\.DS_Store" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9447</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

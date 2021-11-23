@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;list-style-type:none;font-size:12px; font-family:"Microsoft Yahei";}
+a{blr:expression(this.onFocus=this.blur())} /*for IE*/
+a{outline:none;} /*for Firefox*/
+a{text-decoration:none;}
+a:hover{text-decoration: none; }
+img{ border:0;}
+ol,ul,li,dl{list-style-type:none;margin:0; padding:0;}
+textarea,button{outline:none; border:none;}
+i,em{font-style:normal;}
+.fl{float:left}
+.fr{float:right}
+.cl:after{content: "."; display: block; height: 0; clear: both; visibility:hidden;}
+/*--------/全局样式------*/
+.myd-loushuiCont p{ border-bottom:solid 1px #f5f5f5; line-height:55px;font-size:15px;padding:0 15px;background:#fff;}
+.myd-loushuiCont p span{font-size:15px;color:#000;}
+.myd-loushuiCont p a{ display:inline-block;color:#012b5e;font-size:15px;    margin-left: 4.5rem;}
+.myd-loushuiCont p a img{ vertical-align:middle;width:20%;margin-left:5px;margin-bottom:5px;}
+.myd-loushuiCont p em{width:66%;display:inline-block;float:right;margin-right:20px;font-size:15px; text-align:left;color:#9a9a9a}
+
+.myd-piclist{padding:10px; background:#fff;}
+.myd-piclist i{width:30%; text-align:center;display:inline-block; text-align:center;margin:10px 5px;}
+.myd-piclist i img{width:90%;}
+.myd-piclist a{width:30%; display:inline-block;}
+.myd-piclist a img{width:90%;}
+
+.myd-submit{width:100%;overflow:hidden;background:#f3f4f6;border-top:solid 1px #ccc;}
+.myd-submit a{ display:block; background:#3388cc; border-radius:5px;width:80%; margin:0 auto;padding:10px 0; text-align:center;color:#fff;font-size:18px;margin-top:15px;}
+/*--------/漏水信息举报------*/
+
+.myd-txCont{margin-top:15px;border-top:solid 1px #ccc;}
+.myd-txCont p{border-bottom:solid 1px #ccc;height:40px;line-height:40px;padding-left:10px;background:#fff;font-size:16px;}
+.myd-txCont p label{font-size:16px; display:inline-block;width:65px; text-align:left;}
+.myd-txCont p input[type="text"]{border:0 none; outline:none;color:#b3b3b3;font-size:16px; display:inline-block;margin-left:10px;}
+.myd-txCont p span{ display:inline-block; background:#18b4ea; text-align:center;width:90px;height:40px; line-height:40px;color:#fff; cursor:pointer;}
+.myd-tijiao{width:80%; display:block; margin:0 auto;height:40px;line-height:40px; text-align:center;font-size:18px;color:#fff; background:#3388cc; border-radius:5px;margin-top:25px;}
+
+.myd-tip{color:#fff;background:#3388cc;font-size:18px;text-align:center; position:fixed;bottom:0;width:100%;height:50px; line-height:50px; display:block;}
+/*--------/用户绑定------*/
+.myd-xinxi{ background:#fff; border-radius:5px;width:70%; margin:0 auto; margin-top:20%; position:relative;padding-bottom:15px;}
+.myd-xinxi h2{width:60%; margin:0 auto;height:40px; background:#4a8bc2; border-radius:5px; line-height:40px;color:#fff;font-size:16px; position:absolute;top:-25px;left:50%; margin-left:-30%; text-align:center;}
+.myd-close{ display:block; border-bottom:dashed 1px #333;margin:0 10px;text-align:right; line-height:40px;color:#666;font-size:14px;margin-bottom:10px;}
+.myd-xinxi p{padding:0 20px; line-height:30px;font-size:14px;}
+.myd-xinxi p span{ display:inline-block; float:right;font-size:14px;}
+.myd-xinxi p label{font-size:14px;}
+.myd-subm{width:60%; display:block; margin:0 auto;height:40px;line-height:40px; text-align:center;font-size:18px;color:#fff; background:#1c8bea; border-radius:5px;margin-top:25px;}
+/*--------/信息确认------*/
+.myd-guide{width:85%;margin:0 auto;margin-top:20px;background:#fff;border:solid 1px #bfbebe;padding:10px;}
+.myd-guide p{ text-indent:2em; line-height:25px; font-size:14px;}
+.myd-hotline{ background:#d7d7d7;height:45px;width:100%;text-align:center;line-height:45px;font-size:16px; position:fixed;bottom:0;left:0;color:#4c4c4c;}
+
+.myd-guide2{width:100%; overflow:hidden;}
+.myd-guide2 p{ line-height:45px; border-bottom:solid 1px #ccc;padding-left:10px;}
+.myd-guide2 p span{font-size:14px;}
+.myd-guide2 p a { display:inline-block; float:right;}
+.myd-guide2 p a img{width:55%;margin-top:10px;margin-right:10px;}
+/*--------/业务指南------*/

@@ -1,0 +1,803 @@
+﻿*
+{
+	box-sizing: border-box;
+}
+h1, h3, p, dl, dt, dd, textarea
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin: 0 auto; 
+	padding: 0;
+}
+html
+{
+	height: 100%;
+}
+@media screen and (min-width: 50em)
+{
+	html
+	{
+		background: #fff7eb none repeat scroll 0 0;
+	}
+}
+img
+{
+	max-width: 100%;
+}
+a, button, div
+{
+	-moz-user-select: none;
+	text-decoration: none;
+}
+a:active
+{
+	opacity: 0.5;
+}
+select, button, input, textarea
+{
+	background-color: transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+textarea
+{
+	border-bottom: 5px none;
+	padding-top: 5px;
+}
+select, button
+{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	height: 3rem;
+}
+button
+{
+	font-size: 1.3rem;
+}
+button[disabled]
+{
+	opacity: 0.4;
+}
+.MainContent
+{
+	color: #333;
+	flex: 1 1 0;
+}
+.UserContent .PayInfo
+{
+	background: rgba(0, 0, 0, 0) url("../img/person-top-bg.jpg") no-repeat scroll center top / cover;
+	padding: 15px 10px;
+}
+.PayInfo .ChoseInfo
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.ChoseInfo .ChoseNum
+{
+	align-self: flex-end;
+	color: #eee;
+	font-size: 0.9rem;
+	line-height: 3rem;
+	position: absolute;
+	right: 20px;
+}
+.ChoseInfo .ChoseUser
+{
+	background-color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 1.12rem;
+	z-index: 99999;
+}
+.PayInfo .WaterPay
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	padding: 0 60px;
+	text-align: center;
+}
+.PayInfo .WaterPay span
+{
+	padding-bottom: 30px;
+}
+.PayInfo .WaterPay .PayText
+{
+	color: #f6e9cf;
+	font-size: 1rem;
+}
+.PayInfo .WaterPay .Pay
+{
+	color: #fff1b4;
+	font-size: 3rem;
+	font-weight: 400;
+}
+.PayInfo .WaterPay .PayBtn
+{
+	background-color: rgba(255, 255, 255, 0.9);
+	border-color: #ff8a00;
+	color: #ff8a00;
+}
+.PayInfo .WaterPay .PayBtn:active
+{
+	opacity: 0.8;
+}
+.UserInfo
+{
+	background-color: #ff8a00;
+	display: flex;
+	height: 3.75rem;
+}
+.UserInfo a
+{
+	align-items: center;
+	color: #fff;
+	display: flex;
+	flex: 1 1 50%;
+	font-size: 1rem;
+	justify-content: center;
+}
+.UserInfo a + a
+{
+	border-left: 1px solid #fec623;
+}
+.UserInfo a .UserInfo-icon
+{
+	padding-right: 5px;
+	width: 1.5rem;
+}
+.MenuContent
+{
+	margin-top: 5px;
+}
+.MenuContent .Nav
+{
+	padding: 20px 10px;
+}
+.MenuContent .Nav:last-child
+{
+	border-bottom: medium none;
+}
+.MenuContent span
+{
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url("../img/person-icon-water.png");
+	background-origin: padding-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 90% auto, auto auto;
+	color: #f6e9cf;
+	display: flex;
+	font-size: 1rem;
+	height: 4.2em;
+	justify-content: center;
+	line-height: 3.2em;
+	margin: 0 auto;
+	padding-right: 1em;
+	width: 8em;
+}
+.WaterMenu
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.WaterMenu a
+{
+	align-items: center;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	width: 33.3333%;
+}
+.WaterMenu a img
+{
+	width: 2rem;
+}
+.WaterMenu a label
+{
+	padding-top: 10px;
+}
+.LoginTop
+{
+	background: rgba(0, 0, 0, 0) url("../img/top-bg.jpg") no-repeat scroll center top / cover;
+	height: auto;
+	padding: 15px 20px;
+}
+.LoginTop label
+{
+	color: #f6e9cf;
+	font-size: 1rem;
+}
+.LoginTop .LoginTopBottom
+{
+	align-items: center;
+	display: flex;
+	margin-top: 4.4rem;
+}
+.TopTitle
+{
+	width: 7.3rem;
+}
+.TopIcon
+{
+	width: 4rem;
+}
+.TopRight
+{
+	margin-left: auto;
+}
+.FormContent
+{
+	padding: 0 10px;
+}
+.FormContent .FormList
+{
+	border-bottom: 1px solid #f19149;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.FormList label
+{
+	color: #666;
+	font-size: 0.95rem;
+	padding-bottom: 10px;
+}
+.FormList label em
+{
+	color: #999;
+	font-size: 0.8rem;
+	font-style: normal;
+	padding-left: 5px;
+}
+.FormList input
+{
+	border: medium none;
+	color: #333;
+	font-size: 1.05rem;
+	line-height: 1.8rem;
+	text-align: center;
+}
+.MainContent .FormContent .FormBtn
+{
+	display: flex;
+	margin-top: 30px;
+}
+.BtnOne
+{
+	background: rgba(0, 0, 0, 0) linear-gradient(#ffc010, #ff8a00) repeat scroll 0 0;
+	border-color: rgba(228, 0, 0, 0.5);
+	color: #fff;
+	flex: 1 1 0;
+}
+.BtnOne:active
+{
+	background: #ff8a00 none repeat scroll 0 0;
+	color: #ddd;
+}
+.IndexTop
+{
+	background: rgba(0, 0, 0, 0) linear-gradient(#e40000, #c10803) repeat scroll 0 0;
+	height: auto;
+	padding: 15px 20px;
+}
+.IndexTop label
+{
+	color: #f6f9cf;
+	font-size: 1rem;
+}
+.IndexTop .TopInfo
+{
+	align-items: center;
+	display: flex;
+	margin: 30px 0 15px;
+}
+.TopInfo .UserHead img
+{
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+}
+.TopInfo .UserName
+{
+	color: #fff1b4;
+	font-size: 1.3rem;
+	padding-left: 5px;
+}
+.TopInfo .TopRight
+{
+	margin-left: auto;
+}
+.TopInfo .OutBtn
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	border-color: rgba(102, 102, 102, 0.5);
+	color: #ddd;
+	font-size: 0.9rem;
+	height: 2rem;
+	width: 4rem;
+}
+.OutBtn:active
+{
+	opacity: 0.5;
+}
+.IndexList
+{
+	border-bottom: 1px solid #f19149;
+	padding: 0 10px;
+}
+.IndexList a:active
+{
+	border-bottom: 1px solid #df670c;
+}
+.IndexList .ListContent
+{
+	align-items: center;
+	border-bottom: 1px solid #f19149;
+	color: #333;
+	display: flex;
+	padding: 18px 10px 14px;
+}
+.IndexList .ListContent:last-child
+{
+	border-bottom: medium none;
+}
+.ListContent .ListImg img
+{
+	width: 4rem;
+}
+.ListContent .ListName
+{
+	font-size: 1.3rem;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+.ListContent .ListPrompt
+{
+	background-color: red;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 0.7rem;
+	height: 1.1rem;
+	text-align: center;
+	width: 1.1rem;
+}
+.ListContent .ListRight
+{
+	margin-left: auto;
+}
+.ListRight img
+{
+	width: 0.7rem;
+}
+.ListBox
+{
+	border-bottom: 1px solid #adadad;
+	padding: 10px;
+	height: 516px;
+}
+.ListBox .ListRow
+{
+	border-bottom: 1px solid #f19149;
+	display: flex;
+	padding: 15px 0 12px;
+	position: relative;
+}
+.ListBox .ListRow:last-child
+{
+	border-bottom: medium none;
+}
+.ListRow .RowLeft
+{
+	align-items: center;
+	background-color: #ff8a00;
+	color: #fff;
+	display: inline-flex;
+	flex-direction: column;
+	height: 4.7rem;
+	justify-content: center;
+	padding: 0 10px;
+}
+.ListRow .NoReply
+{
+	background-color: red;
+}
+.RowLeft .RowDate
+{
+	color: #eee;
+	font-size: 0.9rem;
+}
+.ListRow .RowContent
+{
+	color: #999;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9rem;
+	justify-content: center;
+	padding-left: 10px;
+}
+.RowContent .RowTitle
+{
+	-moz-box-orient: vertical;
+	color: #333;
+	display: -webkit-box;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	overflow: hidden;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+}
+.RowContent .RowInfo
+{
+	-moz-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ListRow .ReplyIcon
+{
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+.ListRow .ReplyIcon img
+{
+	width: 5rem;
+}
+.MainContent .FormBtn
+{
+	margin-top: 15px;
+	text-align: center;
+}
+.FormBtn .LoadBtn
+{
+	background-color: #ededed;
+	border-color: rgba(255, 102, 51, 0.3);
+	color: #666;
+	font-size: 0.9rem;
+	height: 2rem;
+	width: 7.5rem;
+}
+.LoadBtn:active
+{
+	opacity: 0.5;
+}
+.ListRow:active
+{
+	border-bottom: 1px solid #df670c;
+	opacity: 0.5;
+}
+.DetailsBox
+{
+	margin-bottom: 5px;
+}
+.DetailsBox .DetailsTitle
+{
+	background: rgba(0, 0, 0, 0) linear-gradient(#e40000, #c10803) repeat scroll 0 0;
+	color: #f6e9cf;
+	padding: 20px 10px;
+}
+.DetailsBox .DetailsTitle h1
+{
+	color: #fff1b4;
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 1.6rem;
+	padding-bottom: 8px;
+}
+.DetailsInfo
+{
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px;
+}
+.DetailsInfo dl
+{
+	padding: 10px 0;
+}
+.DetailsInfo dl dt
+{
+	color: #999;
+	font-size: 0.95rem;
+	padding-bottom: 8px;
+}
+.DetailsInfo dl dd
+{
+	line-height: 1.4rem;
+}
+.DetailsInfo dl dd img
+{
+	border: 2px solid #fff1b4;
+	border-radius: 4px;
+	height: 4rem;
+	margin-right: 3px;
+	width: 4rem;
+}
+.DetailsBtn
+{
+	display: flex;
+	margin-top: 30px;
+	padding: 0 10px;
+}
+.Bwtween
+{
+	margin-right: 5px;
+}
+.BtnTwo
+{
+	background-color: #fff1b4;
+	border: 1px solid #ff8a00;
+	color: #ff8a00;
+	flex: 1 1 0;
+}
+.BtnTwo:active
+{
+	opacity: 0.5;
+}
+.ReplyInfo dl dd
+{
+	display: flex;
+}
+.ReplyInfo dl dd textarea
+{
+	border: 1px solid #f19149;
+	color: #333;
+	flex: 1 1 1px;
+	font-size: 1rem;
+	height: 8rem;
+	line-height: 1.4rem;
+}
+.ReplyInfo dl dd .ReplyPerson
+{
+	border: 1px solid #f19149;
+	color: #333;
+	flex: 1 1 0;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+.MyInfo
+{
+	background: rgba(0, 0, 0, 0) url("../img/top-bg01.jpg") no-repeat scroll center top / cover;
+	padding: 15px 20px 20px;
+	text-align: center;
+}
+.MyInfo dl dt img
+{
+	border: 2px solid #fff1b4;
+	border-radius: 50%;
+	height: 4rem;
+	width: 4rem;
+}
+.MyInfo dl dd
+{
+	color: #fff1b4;
+	font-size: 1.1rem;
+	margin-top: 10px;
+}
+.MyInfo dl dd.Add
+{
+	color: #f6e9cf;
+	font-size: 0.95rem;
+}
+.Promt
+{
+	color: #888;
+	font-size: 0.95rem;
+	padding: 30px 15px 0;
+}
+.Promt dl dt
+{
+	color: #666;
+	font-size: 1rem;
+	padding-bottom: 5px;
+}
+.FisrtList .ListRow
+{
+	height: 12.5rem;
+	position: relative;
+}
+.FisrtList .ListRow .ListCover
+{
+	border: medium none;
+	height: 12.5rem;
+	width: 100%;
+}
+.FisrtList .ListRow .ListTitle
+{
+	bottom: -60;
+	padding: 15px 10px 10px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	height: 180px;
+}
+.FisrtList .ListRow .ListTitle h3
+{
+	color: #fff;
+}
+.ListRow .ListTitle
+{
+	color: #999;
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	font-size: 0.9rem;
+	justify-content: center;
+	padding-right: 10px;
+}
+.ListTitle h3
+{
+	-moz-box-orient: vertical;
+	color: #333;
+	display: -webkit-box;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	overflow: hidden;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+}
+.ListRow .ListCover
+{
+	border: 2px solid #fec623;
+	height: 4.8rem;
+	margin-left: auto;
+	width: 6.25rem;
+}
+.ListCover .CoverWrap
+{
+	background: rgba(0, 0, 0, 0) url("../img/list-icon.jpg") no-repeat scroll center center / cover;
+	height: 100%;
+	width: 100%;
+}
+.SearchBox
+{
+	background: rgba(0, 0, 0, 0) linear-gradient(#e40000, #c10803) repeat scroll 0 0;
+	padding: 10px;
+}
+.SearchContent
+{
+	align-items: center;
+	border: 1px solid #f6e9cf;
+	border-radius: 5px;
+	display: flex;
+	padding: 5px 10px;
+}
+.SearchBox .SearchContent img
+{
+	width: 1.4rem;
+}
+.SearchBox .SearchContent input
+{
+	border: medium none;
+	color: #f6e9cf;
+	flex: 1 1 0;
+	font-size: 1rem;
+	height: 2.2rem;
+	padding-left: 5px;
+}
+.BranchBox
+{
+	padding: 0 10px;
+}
+.BranchBox dl
+{
+	background-color: rgba(255, 255, 255, 0.6);
+	border-color: rgba(241, 145, 73, 0.6);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	margin-top: 5px;
+	padding: 10px 10px 15px;
+}
+.BranchBox dl dt
+{
+	align-items: center;
+	border-bottom: 1px solid #f19149;
+	display: flex;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+.BranchBox dl dt h3
+{
+	-moz-box-orient: vertical;
+	color: #333;
+	display: -webkit-box;
+	flex: 1 1 1px;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	overflow: hidden;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+}
+.BranchBox dl dt .MapBtn
+{
+	background: rgba(0, 0, 0, 0) linear-gradient(#ffc010, #ff8a00) repeat scroll 0 0;
+	border-color: rgba(228, 0, 0, 0.5);
+	color: #fff;
+	font-size: 0.95rem;
+	height: 2rem;
+	margin-left: auto;
+	width: 5.6rem;
+}
+.BranchBox dl dt .MapBtn:active
+{
+	background-color: #c93e10;
+	color: #ddd;
+}
+.BranchBox dl dd
+{
+	display: flex;
+	font-size: 0.95rem;
+	padding-top: 10px;
+	position: relative;
+}
+.BranchBox dl dd label
+{
+	color: #999;
+}
+.BranchBox dl dd span
+{
+	color: #555;
+	flex: 1 1 0;
+	padding-left: 5px;
+}
+.MainContent .WaterBox dl
+{
+	margin-top: 10px;
+}
+.MainContent .WaterBox dl dt h3
+{
+	padding-right: 0;
+}
+
+.Title
+{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.duanluo
+{
+	text-indent: 2em;
+	font-size: 16px;
+	padding: 5px;
+	color: Black;
+	font-family: @新宋体;
+	letter-spacing:4px;
+}
+
+.bottom
+{
+	text-align: center;
+	padding: 20px 10px 10px;
+	font-size: 14px;
+	font-family: @新宋体;
+	color: Gray;
+}
+
+.bottom p1
+{
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+.bottom p2
+{
+	padding-bottom: 4px;
+}

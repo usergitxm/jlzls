@@ -1,0 +1,75 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+html, body
+{
+	font-family: "Microsoft YaHei" ,sans-serif;
+	color: #333;
+	font-size: 14px;
+}
+li
+{
+	list-style: none;
+}
+
+/**************/
+.all
+{
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	background: #ededed;
+}
+.top-img
+{
+	width: 100%;
+	overflow: hidden;
+}
+.activeimg
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.bot-img
+{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.bot-img ul
+{
+	width: 100%;
+}
+
+.bot-img .left
+{
+	width: 32%;
+	float: left;
+	margin-left: 1%;
+}
+
+.bot-img .center
+{
+	width: 32%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.bot-img .right
+{
+	width: 32%;
+	float: left;
+	margin-right: 1%;
+}
+
+.bot-img .imgbtn
+{
+	width: 100%;
+}
