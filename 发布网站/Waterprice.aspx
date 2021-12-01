@@ -7,9 +7,11 @@
 <head>
     <title>水价标准</title>
     <style type="text/css">
-    .bottom{ text-align:center;}
+        .bottom {
+            text-align: center;
+        }
     </style>
-    
+
     <div class="container">
         <article class="article">
 			<div class="article-top">
@@ -90,6 +92,6 @@
             <p></p></div>
 		</article>
     </div>
-    
+
 </head>
 </html>

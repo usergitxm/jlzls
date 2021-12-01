@@ -23,11 +23,11 @@ namespace NBSW
 
             if (!IsPostBack)
             {
-               // GetUserOpenId();
+                GetUserOpenId();
                 try
                 {
 
-                 //   OpenId = Session["OpenId"].ToString();
+                    OpenId = Session["OpenId"].ToString();
 
                     Txt_BZBH.Text = GetSEQ.getNextandIdentityApp("BZ_APPLICATION", "N_APPLICATION_ID", "", "").ToString();
                     //安装类型  
@@ -44,7 +44,7 @@ namespace NBSW
                     cbxProperties.DataBind();
                     cbxProperties.Items.Insert(0, new ListItem("---请选择---", "-1"));
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     return;
                 }

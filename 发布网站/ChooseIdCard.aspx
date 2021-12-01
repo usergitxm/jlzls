@@ -20,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="themes/css/picker-extend.css">
 </head>
 <body>
-<form id="form1" runat="server">
-    <section class="aui-flexView">
+    <form id="form1" runat="server">
+        <section class="aui-flexView">
 	<header class="aui-navBar aui-navBar-fixed b-line">
    
 		<a href="javascript:;" onClick="javascript :history.back(-1);" class="aui-navBar-item">
@@ -59,8 +59,8 @@
 		</div>
 	</section>
 </section>
-    <script src="themes/js/jquery.min.js"></script>
-    <script src="themes/js/picker-extend.js" type="text/javascript"></script>
-</form>
+        <script src="themes/js/jquery.min.js"></script>
+        <script src="themes/js/picker-extend.js" type="text/javascript"></script>
+    </form>
 </body>
 </html>

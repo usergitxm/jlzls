@@ -18,7 +18,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <section class="aui-flexView">
+        <section class="aui-flexView">
 	<header class="aui-navBar aui-navBar-fixed ">
 		<a href="javascript:;" onClick="javascript :history.back(-1);" class="aui-navBar-item">
 			<i class="icon icon-return"></i>

@@ -2,66 +2,74 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>用户登录</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-	<meta name="format-detection" content="telephone=no"/>
-	<link href="./bind_files/normalize.css" rel="stylesheet"/>
-	<link href="./bind_files/bootstrap.min.css" rel="stylesheet"/>
-	<link href="./bind_files/font-awesome.min.css" rel="stylesheet"/>
-	<link href="./bind_files/function.css" rel="stylesheet"/>
-	<link href="./bind_files/base.css" rel="stylesheet"/>
-	<link href="./bind_files/main.css" rel="stylesheet"/>
-	<link href="./bind_files/form.css" rel="stylesheet"/>
-	<link href="./bind_files/list.css" rel="stylesheet"/>
-	<link href="./bind_files/article.css" rel="stylesheet"/>
-	<link href="./bind_files/mytooltip.css" rel="stylesheet"/>
-	<link href="./bind_files/comment.css" rel="stylesheet"/>
-	<link href="./bind_files/layui.css" rel="stylesheet" type="text/css" media="screen"/>
-	<link href="./bind_files/sandbeach-oldPage.css" rel="stylesheet">
-	<link href="./bind_files/mydialog.css" rel="stylesheet" type="text/css" media="screen">
-	<style type="text/css">
-	.mydialog-content {
-		max-height: 500px;
-		overflow-y: auto;
-	}
-	</style>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>用户登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="./bind_files/normalize.css" rel="stylesheet" />
+    <link href="./bind_files/bootstrap.min.css" rel="stylesheet" />
+    <link href="./bind_files/font-awesome.min.css" rel="stylesheet" />
+    <link href="./bind_files/function.css" rel="stylesheet" />
+    <link href="./bind_files/base.css" rel="stylesheet" />
+    <link href="./bind_files/main.css" rel="stylesheet" />
+    <link href="./bind_files/form.css" rel="stylesheet" />
+    <link href="./bind_files/list.css" rel="stylesheet" />
+    <link href="./bind_files/article.css" rel="stylesheet" />
+    <link href="./bind_files/mytooltip.css" rel="stylesheet" />
+    <link href="./bind_files/comment.css" rel="stylesheet" />
+    <link href="./bind_files/layui.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="./bind_files/sandbeach-oldPage.css" rel="stylesheet">
+    <link href="./bind_files/mydialog.css" rel="stylesheet" type="text/css" media="screen">
+    <style type="text/css">
+        .mydialog-content {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
-<body id="page-xxbd" class="page-color-card-form">	<br />
-	    <div style=" text-align:center; font-size:23px;"><span>用户登录</span></div>
+<body id="page-xxbd" class="page-color-card-form">
+    <br />
+    <div style="text-align: center; font-size: 23px;"><span>用户登录</span></div>
     <div class="container">
-    <form id="fanuserform" class="color-card-form" data-parsley-trigger="focusout" novalidate="" runat="server">
-		<div class="mytooltip-container"></div>
-        <div class="form-row">
-						<div class="input-row">
-							<label>单位名称：</label> 
-                            <asp:TextBox ID="TextBox1" runat="server" name="UserID"  Text="筠连县自来水公司"  required="" data-parsley-id="4" ReadOnly="True">筠连县自来水公司</asp:TextBox>
-						</div>
-					</div><br />
-					<div class="form-row">
-						<div class="input-row">
-							<label>用户编号：</label> 
-                            <asp:TextBox ID="UserID" runat="server" name="UserID"  placeholder="请输入用户编号" required="" data-parsley-id="4"></asp:TextBox>
-						</div>
-					</div><br />
-                    <div class="form-row">
-						<div class="input-row">
-							<label>设置密码：</label> 
-                            <asp:TextBox ID="UserPassword" runat="server" name="UserPassword" placeholder="请输入初始密码" required="" data-parsley-id="4"></asp:TextBox>
-						</div>
-					</div>
-                    <br /> 
-                    <div><p style="color: #FF0000; line-height:28px;">注：用户输入用户编号设置初始密码后可登录进行绑定信息、查询信息、缴纳水费，在输入编号时切记于自己编号后面加数字“1”。</p></div>
-		<br />
-        <div class="handler-group">
-			<div class="cell">
-			        <asp:Button ID="Submit" runat="server" Text="登录" OnClick="Submit_Click" Width="287px"  class="btn btn-lg btn-base col-xs-10 f-cb" /> <br />
-			</div>
-		</div>
-	</div>	
-	<div class="second-bg"></div>
-<footer>
+        <form id="fanuserform" class="color-card-form" data-parsley-trigger="focusout" novalidate="" runat="server">
+            <div class="mytooltip-container"></div>
+            <div class="form-row">
+                <div class="input-row">
+                    <label>单位名称：</label>
+                    <asp:TextBox ID="TextBox1" runat="server" name="UserID" Text="筠连县自来水公司" required="" data-parsley-id="4" ReadOnly="True">筠连县自来水公司</asp:TextBox>
+                </div>
+            </div>
+            <br />
+            <div class="form-row">
+                <div class="input-row">
+                    <label>用户编号：</label>
+                    <asp:TextBox ID="UserID" runat="server" name="UserID" placeholder="请输入用户编号" required="" data-parsley-id="4"></asp:TextBox>
+                </div>
+            </div>
+            <br />
+            <div class="form-row">
+                <div class="input-row">
+                    <label>设置密码：</label>
+                    <asp:TextBox ID="UserPassword" runat="server" name="UserPassword" placeholder="请输入初始密码" required="" data-parsley-id="4"></asp:TextBox>
+                </div>
+            </div>
+            <br />
+            <div>
+                <p style="color: #FF0000; line-height: 28px;">注：用户输入用户编号设置初始密码后可登录进行绑定信息、查询信息、缴纳水费，在输入编号时切记于自己编号后面加数字“1”。</p>
+            </div>
+            <br />
+            <div class="handler-group">
+                <div class="cell">
+                    <asp:Button ID="Submit" runat="server" Text="登录" OnClick="Submit_Click" Width="287px" class="btn btn-lg btn-base col-xs-10 f-cb" />
+                    <br />
+                </div>
+            </div>
+    </div>
+    <div class="second-bg"></div>
+    <footer>
 	<div class="copyright" id="footerContent">
 	</div>
 <script src="./bind_files/jquery.min.js"></script>
@@ -109,4 +117,5 @@
 	</script> 
 </footer>
     </form>
-</body></html>
+</body>
+</html>

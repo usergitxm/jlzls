@@ -8,14 +8,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-    
-    </div>
-    <asp:Button ID="Button1" runat="server" Text="上传" onclick="Button1_Click" />
-         
+        <div>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+
+        </div>
+        <asp:Button ID="Button1" runat="server" Text="上传" OnClick="Button1_Click" />
+
     </form>
-    
+
 
 
 </body>

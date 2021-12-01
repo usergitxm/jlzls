@@ -3,36 +3,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="zh-CN">
-<head> 
-<title>新闻公告</title>
-  <style type="text/css">
-        .style1
-        {
+<head>
+    <title>新闻公告</title>
+    <style type="text/css">
+        .style1 {
             font-family: Tahoma;
         }
-        .bottom
-        {
-             margin-top:400px;
-             text-align:center;
-             font-family:黑体;
-        	}
-        	.photo
-        	{
-        		text-align:center;
-        		}
-        		.font
-        		{
-        			font-weight:bold;
-        			}
-        			.lineheight{ border-bottom:1px solid #bebebe;}
+
+        .bottom {
+            margin-top: 400px;
+            text-align: center;
+            font-family: 黑体;
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+        .font {
+            font-weight: bold;
+        }
+
+        .lineheight {
+            border-bottom: 1px solid #bebebe;
+        }
     </style>
 </head>
-    <body>
-        <div class="container">
-           
-            <!-- 公告正文 -->
-            <div class="article-body">
-                <section data-role="outer" label="Powered by 135editor.com">
+<body>
+    <div class="container">
+
+        <!-- 公告正文 -->
+        <div class="article-body">
+            <section data-role="outer" label="Powered by 135editor.com">
             <section style="max-width: 100%;">
             <section class="_135editor" style="max-width: 100%; border: 0px none; padding: 0px; box-sizing: border-box;">
             <section class="" style="max-width: 100%;">
@@ -67,7 +69,7 @@
                      <p style="max-width: 100%; min-height: 1em;line-height:38px;">&ensp;&ensp;&ensp;&ensp;四是严格依据施工合同约定的工期总目标，细化职责分工，严格执行，逗硬考核。</p>
                          <p style="max-width: 100%; min-height: 1em;line-height:38px;">&ensp;&ensp;&ensp;&ensp;五是参建单位要进一步规范建设程序，高标准、严要求，在保障工程质量和安全的前提下加快进度，确保按期完成工程建设并投入运行。</p>
                 </section>
-            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

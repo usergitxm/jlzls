@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./投诉_files/layer.css" id="layui_layer_skinlayercss"
         style="">
     <script src="./投诉_files/webuploader.js.下载"></script>
-    
+
     <style type="text/css">
         .cf_tsjy1cont02 {
             padding: 15px 10px;
@@ -148,9 +148,11 @@
             -webkit-opacity: 1;
             opacity: 1;
         }
+
         .myd-txCont {
-            height:750px;
+            height: 750px;
         }
+
         .delimg1 {
             position: absolute;
             top: 0;
@@ -264,7 +266,7 @@
             <p>
                 <label>
                     水表类型<i style="color: #f40">*</i></label>
-                <asp:DropDownList ID="cboMeterType" runat="server">
+                <asp:DropDownList Style="font-size: 16px" ID="cboMeterType" runat="server">
                     <asp:ListItem>普通水表</asp:ListItem>
                     <asp:ListItem>智能水表</asp:ListItem>
                     <asp:ListItem>远程表</asp:ListItem>
@@ -274,13 +276,13 @@
             <p>
                 <label>
                     安装类型<i style="color: #f40">*</i></label>
-                <asp:DropDownList ID="cbxInstallType" runat="server">
+                <asp:DropDownList Style="font-size: 16px" ID="cbxInstallType" runat="server">
                 </asp:DropDownList>
             </p>
             <p>
                 <label>
                     用水性质<i style="color: #f40">*</i></label>
-                <asp:DropDownList ID="cbxProperties" runat="server">
+                <asp:DropDownList Style="font-size: 16px" ID="cbxProperties" runat="server">
                 </asp:DropDownList>
             </p>
             <p>
@@ -313,14 +315,14 @@
                 <asp:TextBox ID="Txt_UserPhone" placeholder="请输入联系电话" runat="server">
                 </asp:TextBox>
             </p>
-          
+
             <p>
                 <label>
-                    上传附件<i style="color: #f40">*</i></label><br/>
-                <asp:FileUpload ID="FileUpload1" AllowMultiple="true" runat="server" /><br/>
-                <asp:FileUpload ID="FileUpload2" AllowMultiple="true" runat="server" /><br/>
-                <asp:FileUpload ID="FileUpload3" AllowMultiple="true" runat="server" /><br/>
-                <asp:FileUpload ID="FileUpload4" AllowMultiple="true" runat="server" /><br/>
+                    上传附件<i style="color: #f40">*</i></label><br />
+                <asp:FileUpload Style="font-size: 16px" ID="FileUpload1" AllowMultiple="true" runat="server" /><br />
+                <asp:FileUpload Style="font-size: 16px" ID="FileUpload2" AllowMultiple="true" runat="server" /><br />
+                <asp:FileUpload Style="font-size: 16px" ID="FileUpload3" AllowMultiple="true" runat="server" /><br />
+                <asp:FileUpload Style="font-size: 16px" ID="FileUpload4" AllowMultiple="true" runat="server" /><br />
             </p>
 
 

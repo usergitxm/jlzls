@@ -9,10 +9,21 @@
     <script src="JS/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="JS/index.js" type="text/javascript"></script>
     <style type="text/css">
-    .back{ background-color:White;}
-    .line{  border-bottom:1px solid #bebebe;}
-    .lineheight{ line-height:28px;}
-    a{ color:Black;}
+        .back {
+            background-color: White;
+        }
+
+        .line {
+            border-bottom: 1px solid #bebebe;
+        }
+
+        .lineheight {
+            line-height: 28px;
+        }
+
+        a {
+            color: Black;
+        }
     </style>
 </head>
 <body class="back">
@@ -26,21 +37,21 @@
                             </div>
                         </a>
                     </div>
-                    <a href="News1.aspx?site=1">
-                    </a>
+                    <a href="News1.aspx?site=1"></a>
                 </div>
             </div>
             <a href="News1.aspx?site=1">
-           <div>
-           <p class="lineheight" style=" margin:10px;">"副县长郭创峰带队考察供排水PPP项目"安全优质供水，用心服务大众</p>
-           <p style=" margin:5px;">&ensp;2018-03-08</p>
-           <p class="line"></p>
-           </div></a>
+                <div>
+                    <p class="lineheight" style="margin: 10px;">"副县长郭创峰带队考察供排水PPP项目"安全优质供水，用心服务大众</p>
+                    <p style="margin: 5px;">&ensp;2018-03-08</p>
+                    <p class="line"></p>
+                </div>
+            </a>
         </div>
     </div>
-      <div style=" height:40px; width:100%; background-color:#009afe; position:fixed; bottom:0px;">
-   <p style=" text-align:center; color:White;">&nbsp;</p>
-       <p style=" text-align:center; color:White; margin-top:-10px;">筠连县自来水公司</p>
-   </div>
+    <div style="height: 40px; width: 100%; background-color: #009afe; position: fixed; bottom: 0px;">
+        <p style="text-align: center; color: White;">&nbsp;</p>
+        <p style="text-align: center; color: White; margin-top: -10px;">筠连县自来水公司</p>
+    </div>
 </body>
 </html>

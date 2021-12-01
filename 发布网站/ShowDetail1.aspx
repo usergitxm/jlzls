@@ -1,204 +1,204 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShowDetail1.aspx.cs" Inherits="SCJN.ShowDetail1" %>
 
 <!DOCTYPE html>
-<html >
+<html>
 <head runat="server">
     <title></title>
-    <meta name="referrer" content="always" /><meta charset='utf-8' /><meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="referrer" content="always" />
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <style type="text/css">
-        *
-        {
+        * {
             font-size: 15px;
             line-height: 200%;
             padding: 0px;
         }
-        body
-        {
+
+        body {
             width: 96%;
             height: 100%;
             background-color: #f7f8f8;
             margin: 0px 2% 0px 2%;
             min-width: 230px;
         }
-        form table
-        {
+
+        form table {
             width: 100%;
             min-width: 230px;
         }
-        #DivHead
-        {
+
+        #DivHead {
             background-color: #005ca1;
             text-align: left;
             font-size: x-large;
             color: White;
-             margin-top:10px
+            margin-top: 10px
         }
-        #DivHead img
-        {
-            width: 25px;
-            border: none;
-            vertical-align: middle;
-        }
-        #DivHead div:first
-        {
-            border-bottom: 1px solid red;
-        }
-        #DivMonth
-        {
+
+            #DivHead img {
+                width: 25px;
+                border: none;
+                vertical-align: middle;
+            }
+
+            #DivHead div:first {
+                border-bottom: 1px solid red;
+            }
+
+        #DivMonth {
             text-align: right;
             font-size: larger;
             color: #787878;
         }
-        table img
-        {
+
+        table img {
             width: 35px;
             vertical-align: middle;
         }
-        table
-        {
+
+        table {
             border-bottom: 1px solid #787878;
             border-top: 1px solid #787878;
             background-color: White;
         }
-        table tr td
-        {
-            font-size: small;
-            color: #787878;
-        }
-        table tr td:first
-        {
-            cellspacing: 25px;
-        }
-        #DivBottom
-        {
+
+            table tr td {
+                font-size: small;
+                color: #787878;
+            }
+
+                table tr td:first {
+                    cellspacing: 25px;
+                }
+
+        #DivBottom {
             width: 100%;
             margin-top: 40px;
             min-width: 250px;
         }
-        #AllMoney
-        {
+
+        #AllMoney {
             width: 90%;
             height: 35px;
             border: 1px solid #EEE;
         }
-        #Submit
-        {
-           height: 35px;
-	color: #FFF;
-	font-size: 16px;
-	font-weight: bold;
-	width: 94%;
-	/*
+
+        #Submit {
+            height: 35px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: bold;
+            width: 94%;
+            /*
 	letter-spacing: 30px;*/
-	display: block;
-	/*
+            display: block;
+            /*
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;*/
-	border-radius: 15px;
-	background-image: url(img/5409.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	/*margin-top: 15px;
+            border-radius: 15px;
+            background-image: url(img/5409.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            /*margin-top: 15px;
 	margin-right: auto;
 	margin-bottom: 15px;*/
-	margin-left: 3%;
-	border: 1px solid #016599;
-
+            margin-left: 3%;
+            border: 1px solid #016599;
         }
-        .aa
-        {
-        	background-image: url(img/5409.jpg);
-        	background-repeat: no-repeat;
-        	}
-        #Img1
-        {
+
+        .aa {
+            background-image: url(img/5409.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #Img1 {
             margin-left: 65%;
         }
-        #noInfo{text-align:center;
-                 margin-bottom:20px;}
+
+        #noInfo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="DivHead">
-        <div>
-            <img src="Img/kehu2.png" /><%=UserName%>><%=id%></div>
-        <div>
-            <img src="Img/zuobiao1.png" /><%=UserAddress%></div>
-             <div>
-            用户余额:<%=UserAmount%><br />
+        <div id="DivHead">
+            <div>
+                <img src="Img/kehu2.png" /><%=UserName%>><%=id%>
+            </div>
+            <div>
+                <img src="Img/zuobiao1.png" /><%=UserAddress%>
+            </div>
+            <div>
+                用户余额:<%=UserAmount%><br />
+            </div>
         </div>
-    </div>
-    <div id="DivMonth">
-        <%=SumMonths%></div>
-    <div>
-        <%if (dt != null && dt.Rows.Count != 0)
-          {
-              foreach (System.Data.DataRow dr in dt.Rows)
-              {
-        %>
-        <table>
-            <tr>
-                <td>
-                    <img src="Img/rili2.png" /><label ForeColor="#005CA1"><%=dr["月份"] %></label> 
-                </td>
-                <td>
-                    <%if (Convert.ToInt32(dr["状态"]) == 0)
-                      {  %>
-                    <img src="Img/weiF_05.png" id="Img1" name="Img1" />
-                    <% }
-                      else
-                      {  %>
-                    <img src="Img/Yf.png" id="Img1" name="Img1" /><%}%>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    起度：<%=dr["起度"] %>
-                </td>
-                <td>
-                    止度：<%=dr["止度"] %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    水量：<%=dr["用量"] %>
-                </td>
-                <td>
-                    单价：<%= dr["单价"]%>元/立方
-                </td>
-            </tr>
-             <tr>
-                <td colspan="2">
-                    综合单价：<%=dr["综合单价"]%>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    综合费用：<%=dr["小计"]%>元
-                </td>
-            </tr>
-        </table>
-        <% 	  }
-          }
-          else
-          {     %>
-       <div id="noInfo">没有查询到信息</div> 
-        <%  }
-        %>
-    </div>
-    <div id="DivBottom">
-       <table style="width:100%; height:50px; float:left;">
-        <tr>
-          <td style=" width:60%;">
-            <input type="text" id="AllMoney" value="<%=allMoney %>" style="color: #FF0000; margin-left:5%;"  ruant="server"/>
-          </td>
-           <td>
-           <asp:Button  ID="Submit" runat="server" Text="缴 费" onclick="Submit_Click" />
-          </td>
-        </tr>
-       </table>
+        <div id="DivMonth">
+            <%=SumMonths%>
+        </div>
+        <div>
+            <%if (dt != null && dt.Rows.Count != 0)
+                {
+                    foreach (System.Data.DataRow dr in dt.Rows)
+                    {
+            %>
+            <table>
+                <tr>
+                    <td>
+                        <img src="Img/rili2.png" /><label forecolor="#005CA1"><%=dr["月份"] %></label>
+                    </td>
+                    <td>
+                        <%if (Convert.ToInt32(dr["状态"]) == 0)
+                            {  %>
+                        <img src="Img/weiF_05.png" id="Img1" name="Img1" />
+                        <% }
+                            else
+                            {  %>
+                        <img src="Img/Yf.png" id="Img1" name="Img1" /><%}%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>起度：<%=dr["起度"] %>
+                    </td>
+                    <td>止度：<%=dr["止度"] %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>水量：<%=dr["用量"] %>
+                    </td>
+                    <td>单价：<%= dr["单价"]%>元/立方
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">综合单价：<%=dr["综合单价"]%>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">综合费用：<%=dr["小计"]%>元
+                    </td>
+                </tr>
+            </table>
+            <% 	  }
+                }
+                else
+                {     %>
+            <div id="noInfo">没有查询到信息</div>
+            <%  }
+            %>
+        </div>
+        <div id="DivBottom">
+            <table style="width: 100%; height: 50px; float: left;">
+                <tr>
+                    <td style="width: 60%;">
+                        <input type="text" id="AllMoney" value="<%=allMoney %>" style="color: #FF0000; margin-left: 5%;" ruant="server" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Submit" runat="server" Text="缴 费" OnClick="Submit_Click" />
+                    </td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>
